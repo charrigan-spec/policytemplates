@@ -699,14 +699,14 @@
           <svg class="chevron" style="width:10px;height:10px;display:inline-block;vertical-align:middle;transition:transform 0.2s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
         </div>
         <div class="sidebar-items">
-          <div class="sidebar-item active" onclick="openTemplate('aup', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="3" width="12" height="18" rx="6"/><line x1="12" y1="9" x2="12" y2="3"/></svg> Acceptable Use Policy
-          </div>
-          <div class="sidebar-item" onclick="openTemplate('isp', this)">
+          <div class="sidebar-item active" onclick="openTemplate('isp', this)">
             <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> Information Security Policy
           </div>
-          <div class="sidebar-item" onclick="openTemplate('rmp', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> Risk Management Policy
+          <div class="sidebar-item" onclick="openTemplate('aup', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="3" width="12" height="18" rx="6"/><line x1="12" y1="9" x2="12" y2="3"/></svg> Acceptable Use Policy
+          </div>
+          <div class="sidebar-item" onclick="openTemplate('aip', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg> AI Policy
           </div>
         </div>
       </div>
@@ -717,14 +717,17 @@
           <svg class="chevron" style="width:10px;height:10px;display:inline-block;vertical-align:middle;transition:transform 0.2s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
         </div>
         <div class="sidebar-items">
-          <div class="sidebar-item" onclick="openTemplate('dpp', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 01-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 011-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 011.52 0C14.51 3.81 17 5 19 5a1 1 0 011 1z"/></svg> Data Privacy Policy
+          <div class="sidebar-item" onclick="openTemplate('dcp', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> Data Classification Policy
           </div>
           <div class="sidebar-item" onclick="openTemplate('drp', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path d="M12 7v5l4 2"/></svg> Data Retention Policy
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path d="M12 7v5l4 2"/></svg> Data Retention & Disposal Policy
           </div>
           <div class="sidebar-item" onclick="openTemplate('gdpr', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 9l4-6 4 6M3 9h8M13 9l4-6 4 6M13 9h8M6 21h12"/></svg> GDPR Compliance Policy
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 9l4-6 4 6M3 9h8M13 9l4-6 4 6M13 9h8M6 21h12"/></svg> Information Security Policy — GDPR
+          </div>
+          <div class="sidebar-item" onclick="openTemplate('prv', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 01-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 011-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 011.52 0C14.51 3.81 17 5 19 5a1 1 0 011 1z"/></svg> Privacy Policy
           </div>
         </div>
       </div>
@@ -735,14 +738,14 @@
           <svg class="chevron" style="width:10px;height:10px;display:inline-block;vertical-align:middle;transition:transform 0.2s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
         </div>
         <div class="sidebar-items">
+          <div class="sidebar-item" onclick="openTemplate('acp', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg> Access Control Policy
+          </div>
           <div class="sidebar-item" onclick="openTemplate('pwp', this)">
             <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12C2 6.5 6.5 2 12 2a10 10 0 0 1 8 4"/><path d="M5 19.5C5.5 18 6 15 6 12c0-2.8 1.4-5.3 3.5-6.8"/><path d="M17.8 20c.2-1 .3-2 .3-3 0-4.7-3.8-8.5-8.5-8.5"/><path d="M12 12c0 1.7-.7 3.2-1.8 4.3"/><path d="M16.5 15c0 2.5-.8 4.8-2.2 6.6"/></svg> Password Policy
           </div>
-          <div class="sidebar-item" onclick="openTemplate('mfa', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> Multi-Factor Authentication Policy
-          </div>
-          <div class="sidebar-item" onclick="openTemplate('rap', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg> Remote Access Policy
+          <div class="sidebar-item" onclick="openTemplate('mdp', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> Mobile Device Policy
           </div>
         </div>
       </div>
@@ -754,13 +757,13 @@
         </div>
         <div class="sidebar-items">
           <div class="sidebar-item" onclick="openTemplate('irp', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg> Incident Response Plan
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg> Incident Response Policy
           </div>
-          <div class="sidebar-item" onclick="openTemplate('blp', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 22V12h6v10"/><path d="M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01"/></svg> Business Continuity Plan
+          <div class="sidebar-item" onclick="openTemplate('csirp', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg> Computer Security Incident Response Plan
           </div>
-          <div class="sidebar-item" onclick="openTemplate('lmp', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 6h11M10 12h11M10 18h11M4 6l1 1 2-3M4 12l1 1 2-3M4 18l1 1 2-3"/></svg> Log Management Policy
+          <div class="sidebar-item" onclick="openTemplate('cctv', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg> CCTV Policy
           </div>
         </div>
       </div>
@@ -771,14 +774,17 @@
           <svg class="chevron" style="width:10px;height:10px;display:inline-block;vertical-align:middle;transition:transform 0.2s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
         </div>
         <div class="sidebar-items">
-          <div class="sidebar-item" onclick="openTemplate('ecp', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email & Communications Policy
+          <div class="sidebar-item" onclick="openTemplate('ite', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M2 20h20"/></svg> IT Equipment Policy
           </div>
-          <div class="sidebar-item" onclick="openTemplate('smp', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><line x1="10" y1="3" x2="8" y2="21"/><line x1="16" y1="3" x2="14" y2="21"/></svg> Social Media Policy
+          <div class="sidebar-item" onclick="openTemplate('eml', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> Email Policy
           </div>
-          <div class="sidebar-item" onclick="openTemplate('byod', this)">
-            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> BYOD Policy
+          <div class="sidebar-item" onclick="openTemplate('vcf', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg> Video Conferencing Policy
+          </div>
+          <div class="sidebar-item" onclick="openTemplate('vpc', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .9h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> Vendor Phone Call Validation SOP
           </div>
         </div>
       </div>
@@ -942,7 +948,7 @@
 <script>
 // ─── STATE (initialized after functions so templates are available) ─────────
 const state = {
-  currentTemplate: 'aup',
+  currentTemplate: 'isp',
   _editingExisting: null,
   _savingFromEditor: false,
   _editorContent: null,
@@ -956,22 +962,2477 @@ const state = {
 
 // ─── TEMPLATES ─────────────────────────────────────────────────────────────
 const templates = {
-  aup: { title: 'Acceptable Use Policy', content: getAUPContent() },
-  isp: { title: 'Information Security Policy', content: getGenericTemplate('Information Security Policy', 'This policy establishes requirements for protecting _______________\'s information assets.') },
-  rmp: { title: 'Risk Management Policy', content: getGenericTemplate('Risk Management Policy', 'This policy defines the framework for identifying and managing risks at _______________.') },
-  dpp: { title: 'Data Privacy Policy', content: getGenericTemplate('Data Privacy Policy', 'This policy outlines how _______________ collects, stores, and protects personal data.') },
-  drp: { title: 'Data Retention Policy', content: getGenericTemplate('Data Retention Policy', 'This policy governs the retention and disposal of data at _______________.') },
-  gdpr: { title: 'GDPR Compliance Policy', content: getGenericTemplate('GDPR Compliance Policy', 'This policy ensures _______________ complies with the General Data Protection Regulation.') },
-  pwp: { title: 'Password Policy', content: getGenericTemplate('Password Policy', 'This policy establishes requirements for password creation and management at _______________.') },
-  mfa: { title: 'Multi-Factor Authentication Policy', content: getGenericTemplate('Multi-Factor Authentication Policy', 'This policy requires the use of multi-factor authentication to access _______________ systems.') },
-  rap: { title: 'Remote Access Policy', content: getGenericTemplate('Remote Access Policy', 'This policy defines the standards for remote access to _______________\'s network and systems.') },
-  irp: { title: 'Incident Response Plan', content: getGenericTemplate('Incident Response Plan', 'This plan defines procedures for detecting, reporting, and resolving security incidents at _______________.') },
-  blp: { title: 'Business Continuity Plan', content: getGenericTemplate('Business Continuity Plan', 'This plan ensures _______________ can maintain operations during and after a disruptive event.') },
-  lmp: { title: 'Log Management Policy', content: getGenericTemplate('Log Management Policy', 'This policy establishes requirements for collecting, storing, and reviewing system logs at _______________.') },
-  ecp: { title: 'Email & Communications Policy', content: getGenericTemplate('Email & Communications Policy', 'This policy governs the use of email and other communication tools at _______________.') },
-  smp: { title: 'Social Media Policy', content: getGenericTemplate('Social Media Policy', 'This policy defines acceptable use of social media by _______________ employees.') },
-  byod: { title: 'BYOD Policy', content: getGenericTemplate('BYOD Policy', 'This policy governs the use of personal devices to access _______________ systems and data.') },
+  // Governance & Security
+  isp:   { title: 'Information Security Policy',            content: getGenericTemplate('Information Security Policy', 'This policy establishes the requirements and responsibilities for protecting _______________\'s information assets, systems, and data from unauthorized access, disclosure, modification, or destruction.') },
+  aup:   { title: 'Acceptable Use Policy',                  content: getAUPContent() },
+  aip:   { title: 'AI Policy',                              content: getAIPContent() },
+
+  // Data Protection & Privacy
+  dcp:   { title: 'Data Classification Policy',             content: getDCPContent() },
+  drp:   { title: 'Data Retention & Disposal Policy',       content: getGenericTemplate('Data Retention & Disposal Policy', 'This policy defines the requirements for retaining, archiving, and securely disposing of _______________ data and records in accordance with legal, regulatory, and business requirements.') },
+  gdpr:  { title: 'Information Security Policy — GDPR',     content: getGDPRContent() },
+  prv:   { title: 'Privacy Policy',                         content: getGenericTemplate('Privacy Policy', 'This policy describes how _______________ collects, uses, and safeguards the personal information of its customers, employees, and other individuals.') },
+
+  // Access & Identity Management
+  acp:   { title: 'Access Control Policy',                  content: getGenericTemplate('Access Control Policy', 'This policy defines the requirements for managing access to _______________\'s information systems, networks, and data to ensure only authorized individuals are granted appropriate access.') },
+  pwp:   { title: 'Password Policy',                        content: getPWPContent() },
+  mdp:   { title: 'Mobile Device Policy',                   content: getMDPContent() },
+
+  // Incident Response & Monitoring
+  irp:   { title: 'Incident Response Policy',               content: getGenericTemplate('Incident Response Policy', 'This policy defines _______________\'s approach to preparing for, detecting, containing, and recovering from information security incidents.') },
+  csirp: { title: 'Computer Security Incident Response Plan', content: getCSIRPContent() },
+  cctv:  { title: 'CCTV Policy',                            content: getGenericTemplate('CCTV Policy', 'This policy governs the installation, operation, and management of closed-circuit television (CCTV) surveillance systems at _______________ premises to ensure the safety and security of personnel and property.') },
+
+  // Technology & Communications
+  ite:   { title: 'IT Equipment Policy',                    content: getGenericTemplate('IT Equipment Policy', 'This policy establishes the requirements for the procurement, use, maintenance, and disposal of IT equipment owned or managed by _______________.') },
+  eml:   { title: 'Email Policy',                           content: getEMLContent() },
+  vcf:   { title: 'Video Conferencing Policy',              content: getVCFContent() },
+  vpc:   { title: 'Vendor Phone Call Validation SOP',       content: getVPCContent() },
 };
+
+function getCSIRPContent() {
+  return `# Computer Security Incident Response Plan
+
+_______________
+
+**Version:** 1.0
+**Date:** {{DATE}}
+**Primary Contact:** {{CONTACT}}
+
+---
+
+## Contents
+
+1. Introduction
+2. Scope
+3. Roles and Responsibilities
+4. Phase I — Preparation
+5. Phase II — Identification and Assessment
+6. Phase III — Containment & Intelligence
+7. Phase IV — Eradication
+8. Phase V — Recovery
+9. Phase VI — Lessons Learned
+10. Communication and Notification
+11. Appendices
+
+---
+
+## 1. Introduction
+
+### 1.1 Purpose
+
+The Computer Security Incident Response Plan (CSIRP) outlines the approach to identify, respond to, mitigate, and learn from cybersecurity incidents affecting _______________ and its managed properties.
+
+The plan ensures:
+
+- Rapid detection and containment of security incidents.
+- Minimization of business disruption for hotel operations.
+- Compliance with industry regulations (PCI DSS, GDPR, CCPA, etc.).
+- Protection of guests and corporate data.
+
+### 1.2 Accountability
+
+This CSIRP is managed by _______________ and will be reviewed annually or after a cyber incident as deemed necessary by _______________.
+
+This plan applies to all _______________ employees, contractors, and third-party service providers handling _______________ information resources.
+
+### 1.3 Revision History
+
+| Version | Date | Personnel | Reason | Approved By |
+|---------|------|-----------|--------|-------------|
+|         |      |           |        |             |
+
+---
+
+## 2. Scope
+
+This plan applies to all IT systems, digital assets, and data under _______________'s management across all affiliated hotel properties.
+
+### 2.1 Terminology
+
+#### 2.1.1 Event
+
+An event is any observable activity within a system, network, environment, process, or personnel that may indicate a security concern but is not yet confirmed as an incident.
+
+Examples include:
+
+- Multiple consecutive failed login attempts.
+- Antivirus software being disabled by a user on their computer.
+- Modification or deletion of system files by an unauthorized user.
+- Unexpected server restarts.
+- Unauthorized access to a system or server.
+
+While events may indicate potential threats, analysis is required to determine if they constitute a security incident.
+
+#### 2.1.2 Incident
+
+An incident is any confirmed or imminent breach of _______________ security policies, acceptable use policies, or standard security practices that threaten the confidentiality, integrity, or availability of information systems or the data they process, store, or transmit.
+
+Examples include:
+
+- Attempts to gain unauthorized access to _______________ systems, networks, or data.
+- Events that affect system or service availability, such as Denial of Service (DoS) attacks.
+- Infection of systems with viruses, malware, or ransomware.
+- Compromise or disclosure of sensitive, personal, or payment card information.
+- Unauthorized use or theft of network, email, or system credentials.
+- Actions that violate explicit or implied _______________ security policies.
+
+#### 2.1.3 Event vs. Incident
+
+No single indicator confirms a security incident, but detecting one or more should prompt further investigation. Prioritize swift assessment to determine if containment is necessary.
+
+Common indicators that an incident is taking place:
+
+- Alerts from intrusion detection tools.
+- Suspicious log entries or discrepancies.
+- Multiple failed login attempts in a short time.
+- Unexplained user accounts, files, or system changes.
+- Unauthorized data modification or deletion.
+- Service disruptions or system crashes.
+- Unusual system performance (e.g., high CPU usage).
+- Unexpected user activity, such as logins at odd hours or from unusual locations.
+- Unauthorized changes to access permissions.
+
+### 2.2 Incident Classification
+
+Incidents are categorized in four priority levels based on potential impact on hotel operations, critical systems, and information assets.
+
+| Category | Description | Response Time | Restoration Time |
+|----------|-------------|---------------|-----------------|
+| **Critical** | >80% of staff unable to work. Critical business systems taken offline. High probability or confirmed breach of sensitive data. Financial losses over $100,000 USD. Severe reputational damage. | 10 Minutes | 4 Hours |
+| **High** | >50% of staff unable to work. Non-critical systems disrupted. Possible or suspected breach of sensitive data. Financial losses over $50,000 USD. | 30 Minutes | 1 Day |
+| **Medium** | >20% of staff unable to work. Limited disruption to non-critical systems. Possible breach of small volumes of non-sensitive data. Financial losses over $25,000. | 1 Hour | 2 Days |
+| **Low** | <10% of non-critical staff affected, short term. Minimal operational impact. One or two non-critical machines affected. No data compromise. | 4 Hours | 3 Days |
+
+#### 2.2.1 Operational Impact
+
+Incidents affecting IT systems disrupt business operations and guest services. Both immediate and potential future impacts must be assessed to determine urgency.
+
+#### 2.2.2 Informational Impact
+
+Incidents that can compromise confidentiality, integrity, or availability of data, including guest records, payment information, and operational data. A data breach may also impact partner organisations or vendors.
+
+#### 2.2.3 Recoverability
+
+The time and resources needed to recover depend on the scale and severity of the incident. Some incidents, like data leaks, may be irreversible, requiring a shift toward damage control and prevention rather than full recovery.
+
+### 2.3 Incident Response Phases
+
+_______________ acknowledges that, despite strong security measures, data breaches and information loss remain possible. A structured incident response framework follows six key phases:
+
+- **Phase I — Preparation:** Establish the IRT, define communication channels, outline response services, procure necessary tools, and implement organisation-wide security awareness training.
+- **Phase II — Identification & Assessment:** Confirm incidents, assess scope, impact, and damage, and preserve evidence for potential legal action.
+- **Phase III — Containment & Intelligence:** Isolate threats, prevent spread, and conduct root cause analysis, potentially with external expertise.
+- **Phase IV — Eradication:** Remove threats, eliminate vulnerabilities, and validate systems to prevent recurrence.
+- **Phase V — Recovery:** Restore affected systems and data to resume normal operations.
+- **Phase VI — Lessons Learned:** Analyze incidents, document findings, and implement improvements to enhance future response.
+
+---
+
+## 3. Roles and Responsibilities
+
+### 3.1 Incident Response Team
+
+_______________ is committed to leveraging skilled internal resources to establish an effective Incident Response Team (IRT). Given hospitality's reliance on third-party IT vendors for critical services such as property management systems (PMS) and point-of-sale (POS) systems, _______________ may incorporate key external service providers into a hybrid IRT.
+
+To maintain continuity, each functional area should have a primary and an alternate IRT member, both trained in incident response procedures.
+
+#### 3.1.1 IRT Composition
+
+The IRT should include representatives from the following key functional areas:
+
+- Chief Information Security Officer (CISO) / Security Director
+- Information Technology Departments
+- Information Security Team
+- Network Operations
+- Data Center & Cloud Operations
+- Privacy or Data Protection Officer (if applicable)
+- Risk Management Unit (if applicable)
+- Website & Digital Services Management
+- Applications & PMS Management
+- Database Administration
+- Internet Service Provider (ISP)
+- Managed Security Services Provider (MSSP) (if applicable)
+- Cloud Services Provider (if applicable)
+- Hotel Operations Management
+
+#### 3.1.2 IRT Manager
+
+The Incident Response Manager directs and prioritizes actions during detection, analysis, and containment of incidents. Key responsibilities:
+
+- Serve as the primary liaison with the CIO and key stakeholders.
+- Assemble IRT and IHT.
+- Ensure incident response personnel are trained and prepared.
+- Maintain and update the CSIRP based on testing, lessons learned, and industry best practices.
+- Conduct annual reviews and tests of the CSIRP.
+- Ensure compliance with legal and industry requirements.
+- Declare cybersecurity incidents and manage response efforts.
+- Stay informed on cyber insurance policies and involve providers when necessary.
+
+### 3.2 Supporting Roles
+
+The following departments should be consulted when an incident occurs:
+
+- **Executive Management:** Provides strategic oversight and decision-making.
+- **Human Resources:** Manages personnel-related security incidents, insider threats, and security awareness training.
+- **Legal Counsel:** Ensures compliance with breach notification laws and regulatory obligations.
+- **Cybersecurity Insurance Provider:** Engages insurance coverage for incident response and recovery.
+- **PR & Communications:** Manages internal and external communication.
+- **Operations & Guest Services:** Ensures minimal impact on guest experience.
+
+#### 3.2.1 Incident Handling Team (IHT)
+
+This team includes legal experts, risk managers, and department leaders who may be consulted or notified during an incident response. Key responsibilities:
+
+- Provide expert guidance on response activities within their area of expertise.
+- Ensure compliance with legal, contractual, and regulatory obligations.
+- Participate in incident response drills and simulations to strengthen preparedness.
+- Manage internal and external communications related to cybersecurity incidents.
+
+#### 3.2.2 Law Enforcement
+
+The CISO / Security Director should establish relationships with local law enforcement, cybersecurity task forces, and industry-specific security organisations to enhance incident response coordination.
+
+### 3.3 Contacts
+
+#### 3.3.1 Escalation Levels
+
+- **Level 1:** Notify first for all incidents (IRT Lead, IRT Manager).
+- **Level 2:** Notify of medium, high and critical level incidents (CIO).
+- **Level 3:** Notify as needed (Legal, HR, Communications, Cyber Insurance, Regulatory Authorities, Law Enforcement).
+
+#### 3.3.2 Contact Information
+
+**Updated:** {{DATE}}
+
+| Name | Title | Role | Phone | Email | Escalation |
+|------|-------|------|-------|-------|------------|
+| | | IRT Lead | | | 1 |
+| | | IRT Manager | | | 1 |
+| | | IRT Member | | | |
+| | CIO | CIO | | | 2 |
+| | Legal | IHT Member | | | 3 |
+| | HR Representative | IHT Member | | | 3 |
+| | | IHT Member | | | 3 |
+| | | Communications | | | 3 |
+| | Cyber Insurance Provider | | | | 3 |
+| | 3rd Party Vendor | | | | 3 |
+| | Regulatory Authority | | | | 3 |
+| | Federal | Law Enforcement | | | 3 |
+| | State | Law Enforcement | | | 3 |
+| | Local | Law Enforcement | | | 3 |
+
+---
+
+## 4. Phase I — Preparation
+
+The Preparation phase is the foundation of an effective incident response plan. Key preparation tasks include:
+
+- Establish the IRT, IHT, and incident communication protocols.
+- Ensure hotel IT teams, property managers, and staff understand incident reporting procedures.
+- Document and share cyber insurance details with key stakeholders.
+- Provide IRT and IHT training based on skill gaps.
+- Ensure IRT has access to incident response tools based on risk assessment.
+- Define and document standard operating procedures (SOPs) for IRT and IHT.
+- Maintain updated network diagrams and asset inventories across hotel properties and corporate offices.
+- Review penetration test and vulnerability management reports, ensuring remediation is implemented.
+- Establish disposable and disabled administrative credentials to be enabled and used for investigations.
+
+### 4.1 Reporting
+
+#### 4.1.1 Internal Reporting Methods
+
+For employees and IT Staff:
+
+- **Dedicated Incident Hotline:** A 24/7 emergency contact number for hotel staff to report security concerns. [PHONE NUMBER]
+- **Incident Reporting Portal:** A secure, web-based form for employees to report suspicious activities. [INCIDENT REPORTING PORTAL LINK]
+- **Email & Messaging System:** Designated security email or internal chat platforms for quick reporting. [MESSAGING PROVIDER/CHANNEL]
+- **IT Helpdesk Escalation:** Frontline IT staff should be trained to recognize and escalate potential security incidents.
+- **Automated System Alerts:** Hotel IT systems should flag anomalies and trigger alerts to the IRT.
+
+#### 4.1.2 External Reporting Methods
+
+For guests, vendors, and third-party partners:
+
+- **Guest Services:** Front desk, guest services, and concierge staff must be trained to recognize and escalate security issues.
+- **Vendor & Partner Communication:** Third-party PMS, POS, and cloud service providers must have a direct line to security teams for rapid escalation.
+- **Public Reporting Form:** A secure online form for external parties to report security concerns. [INCIDENT REPORTING PORTAL LINK]
+
+#### 4.1.3 Reporting Guidelines
+
+- Clearly define what constitutes a security incident (e.g., phishing, malware).
+- Ensure all staff understand reporting protocols.
+- Encourage a no-fault reporting culture to prevent delays due to fear of blame.
+- Provide training programs for employees to recognize security threats.
+
+---
+
+## 5. Phase II — Identification and Assessment
+
+Detecting incidents involves identifying both precursors and indicators.
+
+- **Precursors:** Rare signs suggesting potential future incidents, such as alerts from intrusion detection systems indicating scanning activity.
+- **Indicators:** More common signs that an incident may have occurred or be occurring, including unusual system or network behavior, alerts from security tools (SIEM), IDS/IPS alerts for suspicious traffic, unexplained configuration changes, and employee reports of suspicious emails or unauthorized access attempts.
+
+### 5.1 Identification
+
+When a suspicious anomaly is detected or an automated alert is triggered, Information Security Operations, IT Staff, the Help Desk, or IRT must promptly investigate and verify the event and classify it as either an event or an incident.
+
+**Note:** Compromised systems should be disconnected from the network rather than powered off. Shutting down a system may result in the loss of critical data, forensic evidence, or investigative insights. Only power off a system if complete disconnection from both wired and wireless networks is not possible.
+
+### 5.2 Assessment
+
+Once a potential incident is identified, the IR Manager must activate the IRT to investigate. The team will assess the category, scope, and impact of the incident.
+
+#### 5.2.1 Four Step Incident Assessment
+
+This process should take no longer than 2–3 minutes to avoid delaying rapid response.
+
+| Step | Purpose | Considerations |
+|------|---------|----------------|
+| 1 | **Understand Impact** | Assess the value of the asset. Roughly quantify consequences. Evaluate likelihood of impact occurring. |
+| 2 | **Identify Cause** | Consider all possible scenarios. Eliminate those proven incorrect. Communicate the most likely scenario. |
+| 3 | **Determine Remediation** | How can the issue be contained immediately? Identify steps to minimize impact. Consider reputational damage and legal expectations. |
+| 4 | **Communicate with Leadership** | Provide high-level overview of what happened and how. Explain business impact. Outline short-term actions required to downgrade risk. |
+
+#### 5.2.2 Categorization, Scope, and Impact
+
+**Categorization:** Identify the primary attack method (e.g., Phishing, Disk Wipe, Network Denial of Service, Credential Compromise). Consult the MITRE ATT&CK Framework for accurate classification.
+
+**Scope:** Key factors to consider include affected systems, data sensitivity, entry point, potential damage, recovery time, and resource needs.
+
+**Impact:** The severity level dictates the response strategy. Regardless of priority, an incident report must be completed and reviewed by the IRT Manager. See Appendix II for the full incident response report form.
+
+---
+
+## 6. Phase III — Containment & Intelligence
+
+The goal of the containment phase is to regain control and minimize damage while ensuring hotel operations, guest services, and financial systems remain functional.
+
+### 6.1 Containment
+
+_______________ has established targeted containment strategies for various cyber incidents. Refer to Appendices VII–XI for detailed containment procedures for Ransomware, Malware Outbreak, Compromised Credentials, DDoS, and Web Application Attacks.
+
+#### 6.1.1 Considerations
+
+Before executing containment steps, assess:
+
+- Will critical guest services be affected?
+- Should cyber insurance be notified?
+- Is legal action likely, and should evidence be preserved?
+- Will containment actions fully resolve the issue or only mitigate further damage?
+- What resources (IT, vendors, external specialists) are needed?
+- What is the expected containment duration?
+- Should response efforts be stealthy to avoid tipping off attackers?
+- Are guests, partners, or investors affected and do they require notification?
+- Does the impact trigger the Business Continuity Plan?
+- Does the incident involve PCI DSS-sensitive guest payment data?
+
+#### 6.1.2 Impact Reduction
+
+The response team must act swiftly to:
+
+- Restrict attacker access by disabling compromised accounts, resetting sessions, and applying firewall rules.
+- Isolate affected systems and disconnect compromised PMS, POS, or Wi-Fi networks.
+- Preserve volatile system state, avoiding unnecessary system reboots or alterations before forensic capture.
+- Protect critical systems (booking platforms, email, DNS) to ensure they remain operational.
+- Capture forensic evidence, preserving system logs, network traffic, and affected devices for analysis.
+
+#### 6.1.3 Evidence
+
+If an incident may result in legal or regulatory action, _______________ must follow strict evidence preservation protocols. Chain of custody forms or evidence registers must be used whenever evidence is collected or transferred. See Appendix VI for the Evidence Register.
+
+### 6.2 Intelligence
+
+#### 6.2.1 Monitoring
+
+While assessing the scope and impact of the incident, IRT must also work to enhance monitoring and packet capture on affected systems, including enabling full packet capture, collecting and analyzing system and network logs, and creating memory and forensic images of compromised systems.
+
+#### 6.2.2 Notification
+
+Once an incident is confirmed and classified, internal and external stakeholders may require notification following the "need-to-know" principle.
+
+**Internal:** Executive Leadership & Legal, Hotel Operations & IT Teams, Finance & Risk Management, Communications & PR Teams.
+
+**External:** Cyber Insurance Provider, Service Providers & Vendors (if affected), Law Enforcement (if required), Guests & Partners (if required, per data breach notification laws).
+
+#### 6.2.3 Investigation
+
+If resources allow, recommended methods for attacker identification include validating the attacking host's IP address, researching the attacking host via search engines, checking incident databases, and monitoring possible attacker communication channels.
+
+#### 6.2.4 Moving Forward
+
+Before transitioning to Eradication, confirm:
+
+- The threat actor's access to the network has been blocked or neutralized.
+- All affected systems have been identified.
+- Critical forensic data is preserved, including volatile system data, memory images, and disk images.
+
+---
+
+## 7. Phase IV — Eradication
+
+The Eradication phase involves eliminating all traces of the security incident to prevent reinfection.
+
+### 7.1 Steps
+
+- Disabling breached user accounts, including PMS, POS, and guest service portals.
+- Resetting active sessions for compromised accounts.
+- Identifying and mitigating vulnerabilities exploited in the attack.
+- Closing unnecessary ports on hotel network devices and guest services.
+- Strengthening authentication with MFA and geolocation restrictions.
+- Reinstalling affected operating systems and applications as needed.
+
+**Note:** Compromised administrative tools may be altered by the attacker. Use external, trusted tools (e.g., boot disks) for investigation and remediation.
+
+### 7.2 Restoration Requirements
+
+All reinstalled hotel systems must comply with _______________'s security standards, including:
+
+- Applying latest security patches for PMS, POS, and other critical applications.
+- Disabling unnecessary services to minimize attack surface.
+- Installing and updating anti-virus/EDR solutions.
+- Applying hardened security configurations aligned with _______________ standards.
+- Resetting all account passwords (domain, user, service, and admin credentials).
+
+### 7.3 Considerations
+
+Before moving to the Recovery phase, confirm:
+
+- The root cause of the incident has been identified and all vulnerabilities remediated.
+- All impacted accounts have been disabled, including IRT burner credentials.
+- Network and system configurations have been updated to prevent recurrence.
+- Continued monitoring shows no repeat incidents.
+
+### 7.4 Approval
+
+- **Low-severity incidents:** IRT Manager must sign off on moving to Recovery.
+- **Moderate and critical-severity incidents:** CIO must sign off on moving to Recovery.
+
+---
+
+## 8. Phase V — Recovery
+
+Before restoring hotel systems, the IRT must validate system integrity to confirm successful eradication and ensure the network is secure.
+
+### 8.1 Testing
+
+If feasible, systems must be tested in a secure environment before being reintroduced into live hotel operations. Continuous network monitoring should be maintained to detect unauthorized access attempts.
+
+### 8.2 Steps
+
+- Restore hotel systems from clean backups (e.g., guest databases, payment processing systems).
+- Replace corrupted data using verified backups.
+- Re-enable network connections while applying updated security rules.
+- Notify relevant stakeholders (hotel management, vendors, franchise partners) of security updates.
+- Increase system and network monitoring for early threat detection.
+
+---
+
+## 9. Phase VI — Lessons Learned
+
+### 9.1 Review & Analysis
+
+A post-incident review should be conducted within days of resolution to assess:
+
+- What happened and when?
+- How well did staff and management respond? Were procedures followed effectively?
+- Were any critical details or resources missing?
+- Did any actions delay recovery?
+- What improvements should be made for future incidents?
+- What indicators were overlooked?
+- Are additional security tools or resources needed?
+
+#### 9.1.1 Documentation
+
+Required documentation includes system events (audit records, system logs), actions taken (with timestamps), external communications (with vendors, authorities, or stakeholders), investigator notes, and any SOP deviations with justifications.
+
+#### 9.1.2 Incident Report
+
+At the conclusion of the incident response, the IRT Manager must prepare a formal incident report. See Appendix II for the Computer Security Incident Response Report form.
+
+### 9.2 Meetings & Reporting
+
+A cross-departmental review should include IT, operations, legal, communications, and executive leadership to share insights and ensure future preparedness.
+
+### 9.3 Evidence Retention & Legal Compliance
+
+_______________ must follow established legal and regulatory requirements for retaining forensic evidence, ensuring compliance with PCI DSS, GDPR, and local laws.
+
+### 9.4 Incident Response Metrics
+
+_______________ must track key incident management metrics across four functional categories:
+
+- **Phase 1 — Protect:** System hardening percentage, vulnerability management timelines, network monitoring frequency, incident prevention count.
+- **Phase 2 — Detect:** Mean Time to Detect (MTTD), incident reporting rate, false positive rate, automated threat detection efficiency.
+- **Phase 3 — Respond:** Mean Time to Contain (MTTC), Mean Time to Eradicate (MTTE), incident closure rate, guest impact assessment.
+- **Phase 4 — Sustain:** Lessons learned implementation count, compliance audit results, employee training completion rate, recovery cost analysis.
+
+### 9.5 Continuous Improvement
+
+_______________ must conduct annual reviews of the CSIRP, incorporating lessons learned and adjusting for new threats targeting hospitality (e.g., POS malware, guest Wi-Fi attacks, ransomware), evolving compliance requirements (PCI DSS, GDPR, CCPA), and emerging security technologies. Regular training, tabletop exercises, and live response drills should enhance staff readiness.
+
+---
+
+## 10. Communication and Notification
+
+### 10.1 Internal
+
+The Incident Response Team Manager must immediately report moderate and critical severity incidents to senior or executive leadership.
+
+The IHT is responsible for notifying relevant personnel and affected guests, partners, and vendors within 48 hours (based on SLA, legal, or regulatory compliance, whichever is shorter), and local, state, or federal authorities as required.
+
+### 10.2 Law Enforcement
+
+All law enforcement interactions must be coordinated by the Incident Response Team Manager. Legal counsel should be consulted before and during all discussions with law enforcement.
+
+### 10.3 Regulatory Authorities
+
+If regulated data is compromised, notification may be required to:
+
+- U.S. Department of Health & Human Services (if health-related guest data is affected).
+- Payment Card Industry Security Standards Council (PCI DSS) (if payment card data is breached).
+- Other government regulators, as applicable.
+
+Only IHT members are permitted to discuss the incident with regulatory agencies.
+
+**Notification Timeframes:**
+
+| Authority | Timing |
+|-----------|--------|
+| PCI DSS | Immediately, no later than 24 hours after discovery |
+| FDIC / OCC | No later than 7 days after reasonable basis to conclude a major incident occurred |
+| CCPA | "...the most expedient time possible and without unreasonable delay..." |
+| GDPR | 72 hours after becoming aware of a breach |
+| [STATE] | [INPUT] |
+| [LOCAL] | [INPUT] |
+
+### 10.4 Guests
+
+All impacted guests must be notified according to applicable contract language, service level agreements, applicable statutes or regulations. PR & Communications teams will draft and deliver the approved notification message.
+
+### 10.5 Media
+
+All incident details are considered confidential and must not be shared externally without explicit approval from _______________ executive leadership and legal counsel. Only a designated spokesperson assigned by the IHT may disclose incident details. Unauthorized disclosure by employees may result in disciplinary action, up to and including termination.
+
+---
+
+## 11. Appendices
+
+### Appendix I — Incident Response Checklist
+
+| Step | Action | Responsibility | Date | Notes |
+|------|--------|---------------|------|-------|
+| **Preparation** | | | | |
+| 1 | Designate roles for IHT and supporting incident response. | IRT Lead | | |
+| 2 | Create contact list and send to applicable personnel. | IRT Lead | | |
+| **Identification & Assessment** | | | | |
+| 3 | Perform preliminary assessment and report incident. | IT Support | | |
+| 4 | Perform four-step incident assessment & alert relevant parties. | IRT Lead | | |
+| **Containment** | | | | |
+| 5 | Perform system backup of the system. | IRT / IT Support | | |
+| 6 | Change passwords for the affected system(s). | IRT / IT Support | | |
+| **Eradication** | | | | |
+| 7 | Investigate using alternative administrative tool sets (not system admin tools). | IRT / IT Support | | |
+| 8 | Re-install a clean operating system. | IRT / IT Support | | |
+| 9 | Harden the operating system by applying patches, disabling unnecessary services, and installing anti-virus software. | IRT / IT Support | | |
+| **Recovery** | | | | |
+| 10 | Verify system has been secured/hardened. | IRT / IT Support | | |
+| 11 | Restore system with clean back-up. | IRT / IT Support | | |
+| 12 | Directly monitor network for future unauthorized access attempts. | IRT / IT Support | | |
+| **Follow Up** | | | | |
+| 13 | Analyze affected system(s) to map potential vulnerabilities. | IRT Lead | | |
+| 14 | Submit an Incident Response Report to executive leadership and CIO. | IRT Lead | | |
+
+### Appendix II — Computer Security Incident Response Report
+
+**Date/Time of Report:** _____________________ Page ___ of ___
+
+**Incident Contact Information:**
+
+- Last Name: _________________ First Name: _________________
+- Job Title: _________________
+- Primary Phone: _________________ Alt Phone: _________________
+- Mobile Phone: _________________
+- Primary Email: _________________ Alt Email: _________________
+
+**Incident Description:**
+
+**Incident Date, Time, & Recovery Information:**
+
+- Date/Time of First Event: Date: __________ Time: __________
+- Date/Time Incident Detected: Date: __________ Time: __________
+- Has Incident Ended? ☐ Yes ☐ No
+- Duration of Incident (hours): __________
+- Estimated Severity: ☐ Low ☐ Medium ☐ High ☐ Critical
+- Estimated Recovery Time (clock hours): __________ (staff hours): __________
+- Estimated Financial Damages: __________ Number of Host Systems Affected: __________
+- Number of Endpoint Systems Affected: __________ Number of User Accounts Affected: __________
+
+**Incident Type:**
+☐ Exposing Confidential/Sensitive Information ☐ Theft of IT Resources / Other Assets ☐ Creating User/System Accounts ☐ Altering Data ☐ Destroying Data ☐ Anonymous FTP Abuse ☐ Denial of Service / DDoS Attack ☐ Credit/Debit Card Fraud ☐ Unauthorized Use/Access ☐ Other Fraud ☐ Using Company Computer Illegally ☐ Attacking the Internet ☐ Impersonation ☐ Network/System Sniffer ☐ Installing Malware ☐ Life-Threatening Activity ☐ Unknown ☐ Other (Specify): _______________
+
+**General Incident Information:**
+
+How did you initially become aware of the incident? ☐ Automated Software Notification ☐ Automated Review of Log Files ☐ Manual Review of Log Files ☐ System Anomaly ☐ Third Party Notification ☐ Unknown ☐ Other: _______________
+
+Attack Technique: ☐ Malware ☐ Denial of Service / DDoS ☐ Scanning / Probing ☐ Unauthorized Access ☐ Other: _______________
+
+Suspected Perpetrator(s): ☐ Current Employee/Contractor ☐ Former Employee/Contractor ☐ Third Party Vendor ☐ External Party (within U.S.) ☐ External Party (outside U.S.) ☐ Unknown
+
+**Incident Impact:**
+
+Did incident result in loss/compromise of sensitive or personal information? ☐ Yes ☐ No ☐ Unknown
+
+Did incident result in damage to system(s) or data? ☐ Yes (Specify: _______________) ☐ No ☐ Unknown
+
+**Remediation:** Detail corrective actions taken: _______________
+
+**Lessons Learned (Optional):**
+- Did detection & response processes work as intended?
+- What discovery methods, indicators of compromise, or monitoring procedures would have improved intrusion detection?
+- What improvements to procedures or tools would have helped in the response process?
+- What improvements would have enhanced intrusion containment capabilities?
+- What corrective procedures would have improved efficiency of system recovery?
+
+### Appendix III — Incident Handling Checklist
+
+| Ref # | Actions | Date Completed | Responsible Party |
+|-------|---------|----------------|------------------|
+| **Identification & Assessment** | | | |
+| 2.1.3 | Determine whether an incident occurred. | | |
+| 5 | Review precursors and indicators. | | |
+| 5.1 | Perform research (e.g., search engines, knowledge base). | | |
+| 5.2 | Once an incident is suspected, immediately document investigation and collect evidence. | | |
+| 5.2.1 | Perform four step incident assessment. | | |
+| 5.2.2 | Prioritize incident based on impact and recoverability. | | |
+| 5.2.2 | Escalate, respond, and report incident to appropriate personnel. | | |
+| **Containment, Intelligence, Eradication & Recovery** | | | |
+| 6 | Contain incident. | | |
+| 6.1.3 | Acquire, preserve, secure, and document evidence. | | |
+| 6.2.2 | Notify internal and external stakeholders. | | |
+| 7.1 | Eradicate the incident. | | |
+| 7.1 | Identify and mitigate all vulnerabilities exploited. | | |
+| 7.2 | Remove malware, inappropriate materials, and other components. | | |
+| 7.3 | If additional affected hosts are found, repeat the checklist to identify, contain, and eradicate all threats. | | |
+| 8 | Recover from the incident. | | |
+| 8.1 | Return affected systems to an operationally ready state. | | |
+| 8.1 | Confirm affected systems are functioning normally. | | |
+| 8.2 | If applicable, implement additional monitoring to look for related activity. | | |
+| **Post-Incident** | | | |
+| 9.1 | Create a follow-up report. | | |
+| 9.2 | Conduct "lessons learned" meeting and review metrics for improved incident response. | | |
+
+### Appendix IV — Notification Requirements
+
+#### PCI DSS
+
+Any security incident involving a cardholder data breach must fully comply with the notification and response requirements set by the Payment Card Industry (PCI) Security Standards Council.
+
+**Visa — Immediate Steps (Within 3 Calendar Days):**
+
+- Notify Visa's Global Risk Investigations team within three (3) calendar days.
+- Identify and isolate affected systems; preserve evidence — do not turn off or reboot systems.
+- Inform Acquiring Bank, internal security teams, and legal counsel.
+- Provide Visa with all potentially compromised card numbers within three (3) calendar days.
+
+**Visa Regional Contacts:**
+- Asia Pacific (AP): APFraud@visa.com
+- CEMEA: CEMEAFraudControl@Visa.com
+- Latin America & Caribbean: LACFraudInvestigations@visa.com
+- North America: USFraudControl@visa.com
+- Europe: DataCompromise@visa.com
+- Risk Operations Center 24/7: 1-844-847-2106 / ROC@Visa.com
+
+**Next Steps (Ongoing):** If mandated by Visa, retain a PCI Forensic Investigator (PFI) within five (5) business days. Provide initial forensic report within five (5) business days and a final report within ten (10) business days after completion.
+
+**MasterCard — Immediate Actions:**
+
+- Contain the breach immediately.
+- Notify Mastercard within 24 hours via the Manage My Fraud and Risk Programs application or email: account_data_compromise@mastercard.com
+- Phone: 1-800-347-3083
+
+**American Express — Immediate Actions (within 72 hours):**
+
+- Fill out the Merchant Data Incident Initial Notice form and email to EIRP@aexp.com.
+- US Phone: (888) 732-3750 | International: +1 (602) 537-3021
+
+#### GDPR
+
+Under GDPR, any data breach involving EU residents' personal data must be reported to an EU Data Protection Authority (DPA) within 72 hours. Organisations should seek professional legal counsel regarding their reporting obligations.
+
+#### CCPA
+
+CCPA applies to for-profit companies with annual gross revenue exceeding $25 million, that buy/receive/sell personal data of 50,000+ California residents, or derive 50%+ of annual revenue from selling personal data. Organisations subject to CCPA should consult legal counsel for breach notification procedures.
+
+#### State/Local Notification Requirements
+
+[Each U.S. state has specific data breach notification laws. Input the state(s) where your business operates to determine notification timelines, reporting obligations, and penalties.]
+
+### Appendix V — Situation Update Template
+
+| Field | Value |
+|-------|-------|
+| Date of Entry | |
+| Time of Entry | |
+| Author | |
+| Date & Time of Incident Detection | |
+| Current Status | ☐ New ☐ In Progress ☐ Resolved |
+| Incident Type | |
+| Incident Classification | |
+| Scope (affected networks, systems, applications) | |
+| Impact (affected stakeholders) | |
+| Severity | |
+| Notifications/Actions Pending | |
+| Additional Notes | |
+| Contact for Incident Manager | |
+| Date and Time of Next Update | |
+
+### Appendix VI — Evidence Register
+
+| Date, Time, Location of Collection | Collected By (name, title, contact, phone) | Item Details (quantity, serial #, model, hostname, MAC/IP address) | Storage, Location, and Label Number | Access (date, time, person, rationale) |
+|---|---|---|---|---|
+| | | | | |
+| | | | | |
+| | | | | |
+
+### Appendix VII — Ransomware Containment Checklist
+
+**Ransomware** is a type of malware that encrypts files or locks systems, rendering them inaccessible until a ransom is paid to the attacker.
+
+**Step 1: Identification**
+
+- Isolate infected systems immediately. **DO NOT** power off machines, as forensic artifacts may be lost.
+- Investigate malware to determine if it's running under a user context; if so, disable those accounts.
+- Analyze for characteristics that may be used for containment using a sandboxed malware analysis system.
+- Monitor network activity and record Indicators of Compromise (IoCs).
+- Use the PowerShell "Get-FileHash" cmdlet to get the SHA-256 hash value of the malware file(s).
+- Use discovered IoCs to scan available tools and identify additional infected hosts.
+- Search for the initial point of entry.
+- Research tactics and techniques associated with the identified variant.
+
+**Step 2: Containment**
+
+- Close possible gaps identified in the Identification phase (firewall changes, email blocking rules, user education).
+- Immediately isolate any additional infected hosts.
+- Add IoCs to endpoint protection.
+- Create temporary network rules and segmentation required for malware containment.
+- Disable any additional compromised or involved accounts.
+
+**Step 3: Eradication**
+
+- Preserve artifacts, systems, and backups based on the incident's sensitivity and scope.
+- For physical systems, preserve hard drives or forensically sound images before rebuilding.
+- For virtual machines, retain a full snapshot, backup, or copy before replacement.
+- After preserving all relevant data, proceed with replacement or rebuilding as needed.
+
+**Step 4: Recovery**
+
+- Restore affected systems from a clean pre-infection backup, if available; otherwise, rebuild from a trusted image or bare metal.
+- Remediate vulnerabilities identified during the investigation.
+- Reset or replace compromised accounts, permanently disabling affected ones.
+- Monitor for ongoing threats; configure alerts for quick detection and response.
+- If data exfiltration or extortion occurred, consult legal counsel for next steps.
+
+### Appendix VIII — Malware Outbreak Containment Checklist
+
+**Malware** includes viruses, worms, ransomware, spyware, trojans, and rootkits.
+
+**Step 1: Identification** — Same as Ransomware (isolate, investigate user context, analyze IoCs, identify initial point of entry). Additionally, analyze IoCs to identify links to other attacks (e.g., Emotet, Trickbot, Qakbot in Ryuk ransomware).
+
+**Step 2: Containment** — Close gaps, isolate additional infected hosts, add IoCs to endpoint protection with block-and-alert settings, leverage IoCs and threat intelligence to prevent escalation, create temporary network rules and segmentation, disable compromised accounts.
+
+**Step 3: Eradication** — Preserve artifacts and volatile data, then proceed with replacement or rebuilding as needed.
+
+**Step 4: Recovery** — Restore from clean backups or bare metal, remediate vulnerabilities, reset compromised accounts, monitor for ongoing threats. Consult legal counsel if data exfiltration or extortion occurred.
+
+### Appendix IX — Compromised Credentials Containment Checklist
+
+**A compromised credentials incident** occurs when an attacker gains unauthorized access to a user's login credentials, often through social engineering tactics such as phishing, vishing, and smishing.
+
+**Step 1: Identification**
+
+- Review evidence leading to compromise notification (phishing emails, abnormal logins, unauthorized actions).
+- Identify the compromise method (social engineering, credential scraping, brute force).
+- Interview the affected user: suspicious email? Credentials entered on an unfamiliar site? Credentials shared over the phone?
+- Check the user's workstation for malware (Mimikatz, keyloggers, clipboard scrapers).
+- Use IoCs to identify other affected accounts via email systems and SIEM logs.
+- Assess impacted accounts' access to sensitive data; consult legal counsel if sensitive data exposure is possible.
+
+**Step 2: Containment**
+
+- Reset all compromised passwords.
+- Enable Multi-Factor Authentication (MFA) on impacted accounts.
+- Disable remote access on compromised accounts.
+- Notify external organisations if impacted; consult legal counsel.
+- Block related domains if an external organisation was used in the attack.
+- If malware is discovered: extract file hash with PowerShell Get-FileHash, submit to VirusTotal or Hybrid-Analysis, isolate infected systems without powering off.
+- Block identified IoCs across all security systems.
+
+**Step 3: Eradication** — Preserve artifacts and volatile data, then proceed with replacement or rebuilding as needed.
+
+**Step 4: Recovery** — Restore from clean backups, remediate vulnerabilities, reset compromised accounts, monitor for ongoing threats.
+
+### Appendix X — DDoS Containment Checklist
+
+**A DDoS attack** is a cyberattack in which multiple compromised devices (botnets) overwhelm a targeted network, server, or service with excessive traffic.
+
+**Step 1: Identification**
+
+- Confirm the attack: check for unusually slow network performance, high processor/memory utilization, unavailability of key systems, abnormally high inbound traffic.
+- Confirm the issue is not due to an ISP outage or internal system failure.
+- Determine the type of attack: network resource overload, protocol resource exhaustion, or application resource exhaustion.
+- Capture packet logs (PCAPs) and use firewall logs and network monitoring tools to identify attacking IPs.
+- Monitor for secondary threats — DDoS attacks can be a distraction for more severe threats like ransomware.
+
+**Step 2: Containment**
+
+- Engage ISP and cloud providers; provide attacking IPs for blocking; request traffic filtering or rate limiting.
+- Deploy network mitigations: geo-blocking, firewall rules filtering excessive requests, rate-limiting incoming traffic.
+- Activate load balancing and redundancy measures; distribute traffic via CDN; ensure critical applications have failover solutions.
+- Use Web Application Firewalls (WAFs) and DNS Protection services (Cloudflare, Akamai, AWS Shield).
+- Temporarily disable impacted services; move critical hotel operations to isolated backup systems.
+
+**Step 3: Eradication**
+
+- Block identified attacking IPs, domains, and user agents; update firewall and IPS/IDS rules.
+- Harden network infrastructure: disable unused services, patch network firmware, implement strict rate-limiting for login attempts.
+
+**Step 4: Recovery**
+
+- Restore critical services and ensure traffic levels are normal.
+- Gradually re-enable affected systems while monitoring for residual attack traffic.
+- Conduct security assessment to ensure no malware or backdoors remain.
+
+### Appendix XI — Web Application Attack Containment Checklist
+
+**A web application attack** targets vulnerabilities in websites, web applications, and online services.
+
+**Step 1: Identification**
+
+- Confirm the attack and contact the hosting provider if hosted externally.
+- Review evidence; interview affected administrators about suspicious emails or credential entry on unfamiliar sites.
+- Investigate credential theft: review browser history, scan workstation for credential harvesters.
+- Use IoCs to identify additional compromised accounts.
+- Assess data exposure and access; consult legal counsel if sensitive data was exposed.
+- If account compromise is ruled out, check for web application security gaps; run a security scan.
+
+**Step 2: Containment**
+
+- Reset passwords for all affected management/admin accounts; enable MFA; revoke authentication tokens.
+- Notify external organisations if impacted; consult legal counsel.
+- Block malicious domains if an external organisation was used in the attack.
+- If malware is discovered, isolate and analyze; extract file hash with PowerShell Get-FileHash, submit to VirusTotal.
+- Block identified IoCs across security systems.
+- Preserve a copy of any compromised or altered web application code.
+
+**Step 3: Eradication**
+
+- Analyze and remove malicious code, comparing web applications to a known good copy.
+- Preserve artifacts, systems, and backups based on the incident's sensitivity and scope.
+- Review logs to ensure the attack is fully contained.
+
+**Step 4: Recovery**
+
+- Conduct a second review of web application code to verify all anomalies are removed.
+- Restore affected systems from a clean pre-infection backup or rebuild from bare metal.
+- Patch identified vulnerabilities; reset passwords for all impacted accounts.
+- Set up alerts to quickly detect malicious activity and continue monitoring.
+
+### Appendix XII — Assets
+
+**Property Information:** IP Subnet, DHCP Scope, Core Router IP, DNS servers (internal), DNS name, Secondary DNS name (external).
+
+**Internet Connection and Communication:** ISP IP & Connection Details, Network Provider IP & Connection Details, VOIP/Phone Service, Fixed Line Services & Hardware.
+
+**Firewall and Security:** Firewall Software & Hardware, Wired Network, Wireless Network.
+
+**Site Remote Access:** Remote access methods / logs & locations, Single point of failure analysis — remote access infrastructure.
+
+**Wired Network Switch Infrastructure:** Hardware / firmware / logs & locations.
+
+**Wireless Network Switch Infrastructure:** Hardware / firmware / logs & locations.
+
+**Data Backup:** Backup software, Backup location & restoration timeframes, Data retention requirements.
+
+**Administration Systems:** Web proxy server details, Domain controller details, Web server details, Server environment OS details, Virtual server host environment details.
+
+**Email Systems:** Email server details / logs & locations.
+
+**Database Systems:** Server details / logs & locations, Production database details, Test database details.
+
+**Cloud Service Providers:** Hosted Service Providers.
+
+**Staff Desktop / Laptop / Tablet Systems:** Environment OS, Hardware manufacturer / model(s).
+
+### Appendix XIII — Critical Asset Inventory
+
+| Category | Assets | Criticality |
+|----------|--------|-------------|
+| Guest Data Systems | Property Management System (PMS), Central Reservation System (CRS), CRM | Stores and processes protected guest information; essential to hotel operations and compliance |
+| Payment Systems | Point-of-Sale (POS) terminals, Payment Gateways, Credit Card Processing | Handles cardholder data; subject to PCI DSS requirements; high fraud risk |
+| Network Infrastructure | Firewalls, Routers, Switches, Wireless Access Points | Disruption halts both internal operations and guest services |
+| Servers & Databases | Application Servers, SQL Databases, Cloud-hosted hotel applications | Core to all business-critical processes; downtime affects multiple departments |
+| Workstations & Devices | Front desk PCs, Back-office laptops, Mobile tablets, Keycard encoders | Daily staff operations and guest access systems |
+| Security & Surveillance | CCTV systems, Access Control Systems, Alarm systems | Protects guest safety, asset security, and supports incident investigations |
+| Communications Systems | Email, VoIP/Phones, Emergency notification platforms | Essential for incident coordination and crisis communication |
+| Third-Party Vendor Links | Interfaces to OTAs (Booking.com, Expedia), Payment processors, Loyalty systems | Critical for revenue and guest engagement; compromise impacts trust and continuity |
+| Business Continuity Tools | Backup servers, Disaster Recovery sites, Redundant power (UPS, generators) | Enables rapid recovery from cyber or physical incidents |
+
+### Appendix XIV — Glossary
+
+| Term | Definition |
+|------|-----------|
+| **Business Continuity Plan (BCP)** | The critical information and procedures an organisation needs to continue operating during and after an unplanned event. |
+| **Breach** | Unauthorized access to an organisation's computer systems, networks, or email by an unauthorized individual. |
+| **IRT (Incident Response Team)** | A team responsible for detecting, analyzing, containing, and mitigating cybersecurity incidents. |
+| **CSM (Continuous Security Monitoring)** | Ongoing monitoring of information security, vulnerabilities, and threats to support risk management. |
+| **IDS / IPS** | Security tools that monitor and analyze network traffic for threats. IDS alerts security teams; IPS actively blocks malicious activity. |
+| **ISCM (Information Security Continuous Monitoring)** | A proactive approach to assessing security controls, detecting threats, and managing risk by continuously analyzing security data across an organisation. |
+| **Individual** | Any employee, contractor, or authorized agent granted access to the company's IT resources. |
+| **Information Assets** | Any data or records (digital or physical) prepared, owned, or managed by the organisation. |
+| **Incident Response Plan (IRP)** | Set of procedures to help organisations detect, respond to, and recover from cybersecurity incidents. |
+| **IT Resources** | All hardware, software, accounts, and communication tools owned, leased, or provided by the organisation. |
+| **SIEM (Security Information & Event Management)** | A system that aggregates, analyzes, and alerts security teams about potential cybersecurity incidents across a network. |
+| **User** | Any authorized individual granted access to the organisation's computer systems, applications, and data. |`;
+}
+
+function getDCPContent() {
+  return `# Data Classification Policy
+
+_______________
+
+Enclosed is _______________'s data classification policy. This policy has been developed to protect the information assets of _______________ as well as its employees, partners, and customers. Adherence to these policies is mandatory. If you have any questions regarding any of the policies or your responsibilities in implementing them, please contact your supervisor.
+
+**Version:** 1.0
+**Approval Date:** {{DATE}}
+**Primary Contact:** {{CONTACT}}
+
+---
+
+## Contents
+
+1. Introduction and Purpose
+2. Scope
+3. Definitions
+4. Policy Statement
+5. Roles and Responsibilities
+6. Criteria for Classification
+7. Classification Scheme
+8. Appendix
+
+---
+
+## 1. Introduction and Purpose
+
+Documents are a critical asset at _______________ and the appropriate and timely sharing allows internal and external stakeholders to move synergistically towards common objectives to enforce _______________'s trust and transparency.
+
+This policy defines the classification scheme which supports _______________ in identifying documents' criticality level and the appropriate security measures to be applied.
+
+## 2. Scope
+
+This policy applies to all documents held at _______________.
+
+## 3. Definitions
+
+- **Confidentiality:** The protection of data from unauthorized disclosure.
+- **Contractor:** Use standard _______________ definition.
+- **Document:** Any content, whatever its medium (written on paper or stored in electronic form or as a sound, visual or audiovisual recording), held by the organization.
+- **Employee:** Use standard _______________ definition.
+- **Information:** Any aggregation of data which has value and meaning for the organization.
+- **Personal Data:** Any information relating to an identified or identifiable natural person. An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.
+- **User:** Anyone who accesses _______________ information systems, data, or network resources.
+
+## 4. Policy Statement
+
+The main objective is to protect _______________'s reputation by preventing risks of unauthorized access or misuse through document classification and handling. The overarching principle of this policy is that if a document potentially contains elements that require specific protection, even if these elements are minimal, such document should be classified appropriately to protect those elements.
+
+_______________ will achieve this by:
+
+- Defining _______________'s documents classification schema and guidelines.
+- Assigning responsibility to the existing process owners to act as document classification owners for defining the correct document classification for documents managed in their process(es) and supervising the implementation of the relevant protections.
+- Evaluating the documents classification changes during their lifecycle and in line with the evolution of information relevance; documents classification may change due to the document lifecycle or due to specific legal requirements.
+- Compliance, as a minimum, with all applicable legislation and _______________ requirements.
+
+_______________ will enforce this by:
+
+- Provision of adequate and appropriate resources to implement this policy and to ensure it is adequately communicated and understood.
+- Effective communication and cooperation with stakeholders/users to raise awareness.
+
+## 5. Roles and Responsibilities
+
+Documents classification and handling is everyone's responsibility and a prime responsibility of all levels of management. It is expected that everyone contributes towards achieving _______________'s overall security, trust, and transparency objectives.
+
+## 6. Criteria for Classification
+
+Documents are classified considering, at least, the following aspects:
+
+- All documents must be classified as Public, Internal, Confidential, or Restricted. Each classification can be accessed by a specific predefined population considering the sensitivity of the document inside and outside _______________ and the risks associated with the document, as well as the negative impact of unauthorized access, loss, and/or destruction.
+- If needed, "Need to Know" must be explicitly marked, and the restriction of who can access the document must be defined.
+- All documents must be marked by the document creator/recipient/approver in accordance with the evaluation defined by the process owner and treated with the required security measures.
+- If elements of different nature are present in a document, the classification applied to this document will be the more restrictive. Therefore, if the document contains elements that require specific protection, even if these elements are minimal, such document should be classified appropriately to protect those elements.
+
+## 7. Classification Scheme
+
+### Public
+
+Documents already exposed to the public or authorized to be exposed to the public.
+
+- **Predefined Population:** Everyone (e.g., General Public).
+
+### Internal
+
+Documents not available to the public, the unauthorized disclosure of which could be disadvantageous to the interests of _______________.
+
+- **Predefined Population:** All internal Users. Internal documents disclosed outside _______________ are driven by the "need to know" criteria (available only to authorized persons to perform their job/activity) and under proper non-disclosure and restricted use obligations.
+
+### Confidential
+
+Documents not available to the public. Unauthorized disclosure could seriously harm the interests of _______________ and/or its network. If disclosed — both internally and externally — can cause serious damage to _______________'s reputation or its network reputation. These documents may at some stage be made available to the public, but their premature disclosure might be prejudicial.
+
+- **Predefined Population:** Disclosed by default to authorized _______________ personnel and on a need-to-know basis to designated parties.
+
+### Restricted
+
+Documents not available to the public and with limited internal access. Unauthorized disclosure could extremely harm the interests of _______________ or its network. If disclosed — both internally and externally — could cause serious damage to _______________'s reputation.
+
+- **Predefined Population:** Made available only to specifically authorized _______________ personnel.
+
+## 8. Appendix
+
+### Appendix A — Revision History
+
+| Date | Version | Description | Approved By |
+|------|---------|-------------|-------------|
+|      | 1.0     | Initial release |           |`;
+}
+
+function getEMLContent() {
+  return `# Email Policy
+
+_______________
+
+Enclosed is _______________'s Email policy. Adherence to these policies is mandatory. If you have any questions regarding any of the policies or your responsibilities in implementing them, please contact your supervisor.
+
+**Version:** 1.0
+**Approval Date:** {{DATE}}
+**Primary Contact:** {{CONTACT}}
+
+---
+
+## Contents
+
+1. Overview
+2. Purpose
+3. Scope
+4. Policy
+5. Policy Compliance
+6. Appendix
+
+---
+
+## 1. Overview
+
+Electronic email is pervasively used in almost all industry verticals and is often the primary communication and awareness method within an organization. At the same time, misuse of email can post many legal, privacy and security risks, thus it's important for users to understand the appropriate use of electronic communications.
+
+## 2. Purpose
+
+The purpose of this email policy is to ensure the proper use of _______________ email system and make users aware of what _______________ deems as acceptable and unacceptable use of its email system. This policy outlines the minimum requirements for use of email within _______________'s network.
+
+## 3. Scope
+
+This policy covers appropriate use of any email sent from a _______________ email address and applies to all employees, vendors, and agents operating on behalf of _______________.
+
+## 4. Policy
+
+**4.1** All use of email must be consistent with _______________ policies and procedures of ethical conduct, safety, compliance with applicable laws and proper business practices.
+
+**4.2** _______________ email account should be used primarily for _______________ business-related purposes; personal communication is permitted on a limited basis, but non-_______________ related commercial uses are prohibited.
+
+**4.3** All _______________ data contained within an email message or an attachment must be secured according to the Data Protection Standard.
+
+**4.4** Email should be retained only if it qualifies as a _______________ business record. Email is a _______________ business record if there exists a legitimate and ongoing business reason to preserve the information contained in the email. Email that is identified as a _______________ business record shall be retained according to _______________ Record Retention Schedule.
+
+**4.5** The _______________ email system shall not be used for the creation or distribution of any disruptive or offensive messages, including offensive comments about race, gender, hair color, disabilities, age, sexual orientation, pornography, religious beliefs and practice, political beliefs, or national origin. Employees who receive any emails with this content from any _______________ employee should report the matter to their supervisor immediately.
+
+**4.6** Users are prohibited from automatically forwarding _______________ email to a third-party email system. Individual messages which are forwarded by the user must not contain _______________ confidential or above information.
+
+**4.7** Users are prohibited from using third-party email systems and storage servers such as Google, Yahoo, and MSN Hotmail etc. to conduct _______________ business, to create or memorialize any binding transactions, or to store or retain email on behalf of _______________. Such communications and transactions should be conducted through proper channels using _______________-approved documentation.
+
+**4.8** Using a reasonable amount of _______________ resources for personal emails is acceptable, but non-work related email shall be saved in a separate folder from work related email. Sending chain letters or joke emails from a _______________ email account is prohibited.
+
+**4.9** _______________ employees shall have no expectation of privacy in anything they store, send or receive on the company's email system.
+
+**4.10** _______________ may monitor messages without prior notice. _______________ is not obliged to monitor email messages.
+
+## 5. Policy Compliance
+
+### 5.1 Compliance Measurement
+
+_______________ will verify compliance to this policy through various methods, including but not limited to, periodic walk-thrus, video monitoring, business tool reports, internal and external audits, and feedback to the policy owner.
+
+### 5.2 Exceptions
+
+Any exception to the policy must be approved by _______________ in advance.
+
+### 5.3 Non-Compliance
+
+An employee found to have violated this policy may be subject to disciplinary action, up to and including termination of employment.
+
+## 6. Appendix
+
+### Appendix A — Revision History
+
+| Date | Version | Description | Approved By |
+|------|---------|-------------|-------------|
+|      | 1.0     | Initial release |           |`;
+}
+
+function getPWPContent() {
+  return `# Password Policy
+
+_______________
+
+Enclosed is _______________'s password policy. Adherence to these policies is mandatory. If you have any questions regarding any of the policies or your responsibilities in implementing them, please contact your supervisor.
+
+**Version:** 1.0
+**Approval Date:** {{DATE}}
+**Primary Contact:** {{CONTACT}}
+
+---
+
+## Contents
+
+1. Overview
+2. Purpose
+3. Scope
+4. Policy
+5. Policy Compliance
+6. Definitions and Terms
+7. Appendix
+
+---
+
+## 1. Overview
+
+Passwords are an important aspect of computer security. A poorly chosen password may result in unauthorized access and/or exploitation of _______________'s resources. All users, including contractors and vendors with access to _______________ systems, are responsible for taking the appropriate steps, as outlined below, to select and secure their passwords.
+
+## 2. Purpose
+
+The purpose of this policy is to establish a standard for creation of strong passwords, the protection of those passwords, and the frequency of change.
+
+## 3. Scope
+
+The scope of this policy includes all personnel who have or are responsible for an account (or any form of access that supports or requires a password) on any system that resides at any _______________ facility, has access to the _______________ network, or stores any non-public _______________ information.
+
+## 4. Policy
+
+### 4.1 Password Creation
+
+All user-level and system-level passwords must conform to the following guidelines.
+
+**Strong passwords have the following characteristics:**
+
+- Contain at least 10 alphanumeric characters.
+- Contain both upper- and lower-case letters.
+- Contain at least one number (for example, 0-9).
+- Contain at least one special character (for example, !$%^&*()_+|~-=\`{}[]:";'<>?,./).
+
+**Poor, or weak, passwords have the following characteristics:**
+
+- Contain less than eight characters.
+- Can be found in a dictionary, including foreign language, or exist in a language slang, dialect, or jargon.
+- Contain personal information such as birthdates, addresses, phone numbers, or names of family members, pets, friends, and fantasy characters.
+- Contain work-related information such as building names, system commands, sites, companies, hardware, or software.
+- Contain number patterns such as aaabbb, qwerty, zyxwvuts, or 123321.
+- Contain common words spelled backward, or preceded or followed by a number (for example, terces, secret1 or 1secret).
+- Are some version of "Welcome123," "Password123," or "Changeme123."
+
+You should never write down a password. Instead, try to create passwords that you can remember easily. One way to do this is to create a password based on a song title, affirmation, or other phrase. For example, the phrase "This May Be One Way To Remember" could become the password TmB1w2R! or another variation.
+
+Users must not use the same password for _______________ accounts as for other non-_______________ access (for example, personal ISP account, option trading, benefits, and so on).
+
+Where possible, users must not use the same password for various _______________ access needs.
+
+User accounts that have system-level privileges granted through group memberships or programs such as sudo must have a unique password from all other accounts held by that user to access system-level privileges.
+
+Where Simple Network Management Protocol (SNMP) is used, the community strings must be defined as something other than the standard defaults of public, private, and system and must be different from the passwords used to log in interactively. SNMP community strings must meet password construction guidelines.
+
+### 4.2 Password Change
+
+All system-level passwords (for example, root, enable, NT admin, application administration accounts, and so on) must be changed on at least a quarterly basis.
+
+All user-level passwords (for example, email, web, desktop computer, and so on) must be changed at least _______________. The recommended change interval is every _______________.
+
+Password cracking or guessing may be performed on a periodic or random basis by _______________ or its delegates. If a password is guessed or cracked during one of these scans, the user will be required to change it to be in compliance with this policy.
+
+### 4.3 Password Protection
+
+Passwords must not be shared with anyone. All passwords are to be treated as sensitive, Confidential _______________ information.
+
+- Passwords must not be inserted into email messages or other forms of electronic communication.
+- Passwords must not be revealed over the phone to anyone.
+- Do not reveal a password on questionnaires or security forms.
+- Do not hint at the format of a password (for example, "my family name").
+- Do not share _______________ passwords with anyone, including administrative assistants, secretaries, managers, co-workers while on vacation, and family members.
+- Do not write passwords down and store them anywhere in your office.
+- Do not store passwords in a file on a computer system or mobile devices (phone, tablet) without encryption.
+- Do not use the "Remember Password" feature of applications (for example, web browsers).
+
+Any user suspecting that his/her password may have been compromised must report the incident and change all passwords.
+
+### 4.4 Application Development
+
+Application developers must ensure that their programs contain the following security precautions:
+
+- Applications must support authentication of individual users, not groups.
+- Applications must not store passwords in clear text or in any easily reversible form.
+- Applications must not transmit passwords in clear text over the network.
+- Applications must provide for some sort of role management, such that one user can take over the functions of another without having to know the other's password.
+
+### 4.5 Use of Passwords and Passphrases
+
+Passphrases are generally used for public/private key authentication. A public/private key system defines a mathematical relationship between the public key that is known by all, and the private key, that is known only to the user. Without the passphrase to "unlock" the private key, the user cannot gain access.
+
+Passphrases are not the same as passwords. A passphrase is a longer version of a password and is, therefore, more secure. A passphrase is typically composed of multiple words. Because of this, a passphrase is more secure against "dictionary attacks."
+
+A good passphrase is relatively long and contains a combination of upper and lowercase letters and numeric and punctuation characters. An example of a good passphrase: "The*?#>*@TrafficOnThe101Was*&#!#ThisMorning"
+
+All of the rules above that apply to passwords apply to passphrases.
+
+## 5. Policy Compliance
+
+### 5.1 Compliance Measurement
+
+_______________ will verify compliance to this policy through various methods, including but not limited to, periodic walkthroughs, video monitoring, business tool reports, internal and external audits, and feedback to the policy owner.
+
+### 5.2 Exceptions
+
+Any exception to the policy must be approved by _______________ in advance.
+
+### 5.3 Non-Compliance
+
+An employee found to have violated this policy may be subject to disciplinary action, up to and including termination of employment.
+
+## 6. Definitions and Terms
+
+The following definitions and terms can be found in the SANS Glossary located at: https://www.sans.org/security-resources/glossary-of-terms/
+
+- **Simple Network Management Protocol (SNMP)**
+
+## 7. Appendix
+
+### Appendix A — Revision History
+
+| Date | Version | Description | Approved By |
+|------|---------|-------------|-------------|
+|      | 1.0     | Initial release |           |`;
+}
+
+function getGDPRContent() {
+  return `# Information Security Policy — GDPR
+
+_______________
+
+Enclosed are _______________'s information security policies. These policies have been developed to protect the information assets of _______________ as well as its employees, partners, and customers. Adherence to these policies is mandatory. If you have any questions regarding any of the policies or your responsibilities in implementing them, please contact your supervisor.
+
+**Version:** 1.0
+**Approval Date:** {{DATE}}
+**Primary Contact:** {{CONTACT}}
+
+---
+
+## Table of Contents
+
+1. Introduction
+2. Definitions
+3. Scope
+4. Distribution
+5. Enforcement
+6. Review
+7. Compliance
+8. Exceptions
+9. Information Security Program
+10. Acceptable Use
+11. Access Control
+12. Asset Management
+13. Data Protection
+14. Incident Response
+15. Network Security
+16. Risk Management
+17. Security Awareness Training
+18. Security Monitoring and Auditing
+19. System Configuration
+20. Vulnerability Management
+21. Vendor Management
+22. Appendix
+
+---
+
+## 1. Introduction
+
+This information security policy outlines the appropriate measures required of organizations seeking to comply with the General Data Protection Regulation (GDPR).
+
+This document establishes the standard by which _______________ identifies, assesses, and mitigates its risks to protect and secure the confidentiality, integrity, and availability of company and client information and data. By adopting, maintaining, and enforcing this document _______________ aligns with its ethic of transparency and trust.
+
+## 2. Definitions
+
+- **Availability:** Ensuring that information systems, data and network resources are available and ready for use when they are needed.
+- **Confidentiality:** The protection of data from unauthorized disclosure.
+- **Contractor:** Use standard _______________ definition.
+- **DMZ:** Demilitarized zone; network added between a private and a public network to provide an additional layer of security.
+- **Employee:** Use standard _______________ definition.
+- **Emergency Change:** An urgent or critical change that should occur outside of _______________'s formal change management process.
+- **Encryption:** Process of converting data into an unintelligible form except to holders of a specific cryptographic key.
+- **Information System:** Includes, but is not limited to, laptop computers, workstations, servers, mainframe computers, routers, switches, cell phones, telephones, and fax machines.
+- **Integrity:** The accuracy, completeness, and validity of information.
+- **Logical Controls:** Controls that limit logical access to information systems and/or electronic data (e.g., passwords, user accounts, and firewall rules).
+- **Malicious Software:** Software designed to damage or disrupt information systems, data, or network resources.
+- **Network Resource:** Communication links and network bandwidth.
+- **Physical Controls:** Controls that are physically implemented (e.g., surveillance cameras, motion alarms, door locks, and security guards).
+- **Risk:** The likelihood of a given threat causing a vulnerability, and the resulting impact of that adverse event on an organization.
+- **Security Incident:** Attempted or successful unauthorized access, use, disclosure, modification, or destruction of data or services used or provided by _______________.
+- **Sensitive Areas:** Any data center, server room, or area that houses systems that store, process, or transmit cardholder data.
+- **Sensitive Data:** Includes passwords, Social Security numbers, credit card information, Protected Health Information (PHI), Personally Identifiable Information (PII), bank account numbers, and Tax ID numbers stored, processed, or transmitted on _______________ information systems or network resources.
+- **Strong Cryptography:** A cryptographic algorithm or protocol that makes it very difficult for an unauthorized person to gain access to encrypted data.
+- **Threat:** A condition that may cause information or information-processing resources to be intentionally or accidentally lost, modified, exposed, made inaccessible, or otherwise affected to the detriment of _______________.
+- **Two Factor Authentication:** The use of two independent mechanisms for authentication (e.g., a security token and a password).
+- **User:** Anyone who accesses _______________ information systems, data, or network resources.
+- **Visitor:** A vendor, guest of an employee, service personnel, or anyone who needs to enter a _______________ facility containing information systems, data, or network resources for a short duration, usually not more than one day.
+
+## 3. Scope
+
+This policy applies to all property, equipment, assets, information, data, and items owned or leased by _______________ as well as all employees and third parties (e.g., Contractors, Vendors, etc.) that work for or with _______________.
+
+## 4. Distribution
+
+This policy, whether in whole or in significant part, must be published and distributed to all appropriate employees, contractors, vendors, service providers, business partners, etc. in as secure a manner as possible.
+
+## 5. Enforcement
+
+Failure to comply with or violation of this policy or any other _______________ policy may result in disciplinary action up to and including termination of employment or contract.
+
+## 6. Review
+
+This policy must be reviewed at regular intervals but no less than annually and when required by business change or need.
+
+## 7. Compliance
+
+Designated personnel will verify compliance to this policy through various methods, including but not limited to, periodic walkthroughs, video monitoring, business tool reports, internal and external audits, and feedback from users and policy owners.
+
+## 8. Exceptions
+
+Any exception to this policy must be approved by _______________ and documented with the rationale.
+
+## 9. Information Security Program
+
+This policy establishes the overarching security program at _______________.
+
+### Managerial Commitment
+
+The executive and management team are committed to ensuring client and company interests are kept as secure as possible with regard for the confidentiality, integrity, and availability of company and client information and data.
+
+### General Policy
+
+An information security program must be developed, established, and maintained. This program must include all policies, procedures, mechanisms, assessments, technologies, people, and processes as deemed necessary by _______________.
+
+### Roles and Responsibilities
+
+- **[Name, Title]:** Establish, document, and distribute security policies and procedures.
+- **[Name, Title]:** Monitor and analyze security alerts and information and distribute to appropriate personnel.
+- **[Name, Title]:** Establish, document, and distribute security incident response and escalation procedures.
+- **[Name, Title]:** Administer user accounts, including additions, deletions, and modifications.
+- **[Name, Title]:** Monitor and control all access to data.
+- **Data Protection Officer:** Inform and advise the controller or processor and employees of their regulatory obligations. Monitor compliance with all applicable laws, regulations, and standards. Provide advice regarding the DPIA. Cooperate with the supervisory authority. Act as a point of contact for the supervisory authority.
+
+### Testing and Review
+
+_______________'s information security program and all associated controls must be tested and reviewed for effectiveness and updated regularly but no less than annually.
+
+### Feedback Loop
+
+_______________ must implement a feedback loop process that allows management and stakeholders to take actions in response to a changing compliance, cybersecurity, and regulatory landscape. All decisions must be monitored for effectiveness and business impact.
+
+## 10. Acceptable Use
+
+### General Policy
+
+_______________ information systems may be used only by authorized users for their authorized business purpose to facilitate the legitimate business needs of _______________.
+
+### Right to Monitor
+
+_______________ reserves the right to monitor and audit all equipment, systems, devices, network traffic, and any other technology as deemed appropriate by business need or regulatory requirement.
+
+### User Responsibilities
+
+Users are responsible for:
+
+- The security, confidentiality, and integrity of _______________ and client data, accounts, and systems under their control.
+- Adhering to _______________'s password policy.
+- Ensuring that any device or system under their control is locked and/or logged out when left unattended.
+- Adhering to _______________'s clear desk policy.
+- Reporting any changes to their access requirements to _______________.
+- Reporting any suspected or actual account compromise to _______________.
+- Ensuring their credentials are not shared with any person for any reason.
+- Promptly reporting the theft, loss, or unauthorized disclosure of _______________ property or information.
+- Maintaining system-level and user-level passwords in accordance with _______________'s password policy.
+
+### Unacceptable System and Network Activities
+
+The following are strictly prohibited:
+
+- Engaging in or supporting illegal activities of any kind under any jurisdiction.
+- Procuring or transmitting material or information that violates company policy.
+- Sending spam through any medium.
+- Forging, misrepresenting, obscuring, suppressing, or replacing a user identity through any communication.
+- Use of any _______________ email, IP address, or domain to engage in conduct that violates company policy.
+- Violating copyright law through any means such as duplicating or downloading pirated software or files.
+- Revealing passwords or user accounts to others.
+- Sharing unique authentication credentials of any kind with any other user.
+- Executing any form of network monitoring without approval.
+- Circumventing any antivirus, antimalware, or similar security software.
+- Circumventing user authentication or the security of any host, network, account, or device.
+- Scanning or interacting with any unknown or unfamiliar QR codes.
+- Causing denial of service in any capacity.
+
+### Removable Media
+
+Personnel may only use company owned or approved removable media during their legitimate business duties. Removable media storing confidential or restricted information must be sufficiently encrypted to prevent unauthorized access. All removable media sent outside of the facility must be sent by a secured courier with accurate tracking and a chain of custody document.
+
+## 11. Access Control
+
+### Authentication
+
+All users must be given unique identifiers (usernames) and authenticators (passwords, etc.). Multifactor authentication must be used on all _______________ systems, devices, and remote connections.
+
+### User Access Management
+
+Users must be allocated access rights and permissions commensurate with their role and responsibilities. Administrator permissions must only be provided to users required to perform administrator tasks. Accounts must never be shared between users. All inactive accounts must be disabled and archived after ninety (90) days of inactivity.
+
+### Access Rights Review
+
+All access rights must be reviewed no less than annually. Elevated access rights must be reviewed quarterly.
+
+### Password Requirements
+
+All passwords must:
+
+- Use strong cryptography during transmission and storage.
+- Consist of at least eight (8) characters.
+- Contain a combination of lowercase letters, uppercase letters, numbers, and special characters.
+- Not use any part of the username or any personal information.
+- Not be the same as the last four (4) passwords used.
+- Be changed at a minimum of every ninety (90) days.
+- Be immediately changed from the default or first issued password.
+
+### Remote Access
+
+Remote access must be strictly controlled with encryption, VPNs, and strong, complex passwords. Remote connections must enforce an automatic session timeout after thirty (30) minutes of inactivity. All third-party connections must be deactivated and archived immediately after use.
+
+### Wireless Access
+
+All company owned wireless devices must use approved authentication protocols, approved encryption protocols, and maintain a hardware address that can be registered and tracked. _______________ must display and users must agree to a wireless access agreement prior to being granted access to company owned wi-fi networks.
+
+## 12. Asset Management
+
+### Asset Inventory
+
+_______________ shall create and maintain an up-to-date asset inventory to include systems, devices, software, servers, and all other applicable types of assets. The asset inventory must be reviewed no less than quarterly.
+
+### Tracking Requirements
+
+_______________ must gather and maintain, at minimum, the following information: date of purchase, make and model, serial number, location, type of asset, data classifications, owner, department, purchase order number, disposition, and operating system.
+
+### Disposal and Repurposing
+
+When disposing of any asset, all sensitive data must be removed prior to disposal. Systems or mediums that store sensitive data must be reformatted and physically destroyed so as to render them completely unreadable and unusable.
+
+## 13. Data Protection
+
+_______________ does not retain any data, regardless of classification, for longer than is necessary with respect for the data's legitimate business purpose and legal and regulatory requirements.
+
+### Classification
+
+- **Public:** Readily available to the public. Unlikely to cause harm if released through inappropriate channels.
+- **Internal:** Company-wide, protected with limited controls. Minimal impact to the business if disclosed.
+- **Confidential:** Team-wide, contained within the business. Could negatively affect the business and brand if disclosed.
+- **Restricted:** Highly sensitive, limited on a need-to-know basis. Significant financial or legal impact if disclosed.
+
+### Clean Desk
+
+All personnel are expected to maintain a clear desk free of any confidential or restricted information including access credentials. Desks, filing cabinets, and other storage containers must be locked when personnel are away or have left for the day.
+
+### Data Controller Responsibilities
+
+_______________ must implement appropriate technical and organizational measures to ensure processing is performed in accordance with applicable laws, data-protection principles are implemented effectively, a record of processing activities is created and maintained, and cooperation with the supervisory authority is maintained.
+
+In the event of a data breach likely to result in a risk to a person's rights, _______________ must notify the proper supervisory authority within 72 hours of becoming aware of the breach and must notify the affected data subjects without undue delay.
+
+### Data Protection Impact Assessment
+
+Prior to processing any data likely to result in a high risk to a person's rights, _______________ must carry out a data protection impact assessment (DPIA). The DPIA must contain a systematic description of the processing operations, an assessment of the necessity and proportionality of the processing, an assessment of risks to the rights and freedoms of data subjects, and the controls proposed to address those risks.
+
+### Data Protection Officer
+
+When required by law, _______________ must appoint a data protection officer (DPO). The DPO shall directly report to the highest management level of the business and must not be dismissed, penalized, or interfered with during the performance of their responsibilities.
+
+## 14. Incident Response
+
+_______________ must have a formal, documented incident response plan that includes roles, responsibilities, and communication strategies; specific incident response procedures; business recovery and continuity procedures; data backup processes; and procedures for responding to alerts from logging, monitoring, or alert systems.
+
+_______________ must designate specific personnel to be available 24/7 to respond to alerts and incidents. The incident response plan and all associated procedures must be reviewed and tested annually.
+
+## 15. Network Security
+
+### Patching and Updates
+
+All equipment, devices, and software must be kept up to date with the most recent security patches and updates. All applicable vendor-supplied critical security patches must be installed within one month of release.
+
+### Firewalls
+
+All firewalls must be monitored for suspicious activity, perform stateful inspection, restrict connections between untrusted networks, restrict inbound and outbound traffic to only legitimate business traffic, and deny all other traffic. Firewall rule sets must be reviewed every six (6) months.
+
+### Secure Communication and Transmission
+
+All communications used for business purposes must be secured to the highest level practical. Whenever sensitive data must be sent over an open, public network, strong cryptography/encryption to include TLS 1.2 or IPSEC must be used. It is strictly prohibited to send or receive any data classified as "restricted" over end-user messaging technologies (unencrypted emails, SMS, non-corporate chats, etc.).
+
+### Segmentation
+
+When practical and appropriate, networks must be segmented using a combination of physical and logical means. Segmented networks must be tested at least annually or after any significant changes.
+
+## 16. Risk Management
+
+### Risk Assessment
+
+_______________ must conduct a comprehensive risk assessment at least once every year, considering people, processes, data, and technology across all business lines.
+
+### Risk Monitoring
+
+_______________ must create and maintain a risk register for tracking and monitoring all identified risks.
+
+### Penetration Tests
+
+_______________ must perform penetration tests on information systems no less than annually. Tests must include network testing, application layer testing, and network segmentation testing.
+
+### Vulnerability Scans
+
+_______________ must perform vulnerability scans on information systems no less than quarterly.
+
+### Vulnerability Remediation Timelines
+
+- **Critical:** Remediate immediately.
+- **High:** Remediate within seventy-two (72) hours.
+- **Medium:** Remediate within two (2) weeks.
+- **Low:** Remediate as time and resources allow.
+
+## 17. Security Awareness Training
+
+_______________ requires that each employee upon hire and at least annually thereafter complete all applicable role-based security awareness training. Training must include information security obligations, phishing/vishing/smishing awareness, significant policy revisions, new security threats, and any other subject deemed necessary by _______________.
+
+## 18. Security Monitoring and Auditing
+
+All logs and associated information must be preserved and retained for no less than one (1) year, with a minimum of three months immediately available for analysis. Logs and audit trails from critical systems and devices must be reviewed daily.
+
+_______________ must deploy antivirus and antimalware software on all appropriate information systems. This software must be capable of detecting, quarantining, removing, and protecting against malicious software. All antivirus signatures must be kept current and the software must remain actively running.
+
+## 19. System Configuration
+
+_______________ must develop and implement formal, documented configuration standards for its information systems consistent with system hardening best practices. Standards must include disabling unnecessary services and protocols, appropriate configuration of system security settings, removal of unnecessary functionality, and changing or removing all vendor-supplied defaults.
+
+## 20. Vulnerability Management
+
+_______________ must develop, implement, and execute a robust and comprehensive vulnerability management process. All vendor-supplied critical security patches for critical infrastructure must be installed within thirty (30) days of notification or release. All other security patches must be installed within ninety (90) days.
+
+## 21. Vendor Management
+
+_______________ must develop and maintain a service provider management program that includes a regularly maintained list of service providers, written vendor acknowledgements of their responsibilities for the security of company and client data, and a program to monitor service providers' compliance obligations.
+
+All vendors that engage with _______________ must have signed and approved vendor agreements covering vendor criticality, sourcing, procuring, monitoring, reporting, conflict resolution, and notification timelines.
+
+## 22. Appendix
+
+### Appendix A — Policy Acknowledgment
+
+I have received a copy of _______________'s Information Security Policy and I have read and understand the policy. I agree to observe the terms and conditions of this policy.
+
+Signed Name: _____________________________________________________________
+
+Printed Name: _____________________________________________________________
+
+Date: _____________________________________________________________
+
+### Appendix B — Revision History
+
+| Date | Version | Description | Approved By |
+|------|---------|-------------|-------------|
+|      | 1.0     | Initial release |           |`;
+}
+
+function getAIPContent() {
+  return `# AI Policy
+
+_______________
+
+**Version:** 1.0
+**Approval Date:** {{DATE}}
+**Primary Contact:** {{CONTACT}}
+
+---
+
+## Contents
+
+1. Purpose
+2. Scope
+3. Objectives
+4. Acceptable Data Use
+5. User Administration
+6. Assessment of AI Vendors
+7. Compliance and Ethics
+8. Policy Review and Updates
+9. Acknowledgement
+10. Appendix
+
+---
+
+## 1. Purpose
+
+This AI Policy outlines the principles and guidelines for developing, deploying, and using Artificial Intelligence (AI) technologies within _______________ (hereafter referred to as "the Company"). The purpose is to ensure AI solutions are used responsibly, ethically and in compliance with all applicable laws and regulations.
+
+## 2. Scope
+
+This policy applies to all employees, contractors, and third-party vendors of the Company that use AI technologies for operational, analytical and customer service purposes within the context of hotel management or activities.
+
+## 3. Objectives
+
+- To ensure the ethical use of AI technologies.
+- To protect the privacy and data of hotel management company's guests and employees.
+- To establish guidelines for AI deployment and usage.
+- To ensure compliance with legal and regulatory requirements.
+
+## 4. Acceptable Data Use
+
+### 4.1 Data Types
+
+The data types permitted for input or use in AI technology are limited to the following:
+
+- Anonymized guest data for personalization and service improvement.
+- Operational data for efficiency and maintenance predictions.
+- Publicly available data for market analysis and competitive positioning.
+
+### 4.2 Data Handling
+
+- All data used must comply with data protection laws (e.g., GDPR, CCPRA).
+- Sensitive information, such as personal identification numbers and payment information, must be encrypted and anonymized before use.
+
+### 4.3 Data Minimization
+
+- Collect only the minimum amount of data necessary to achieve the intended purpose.
+- Regularly review data collection practices to ensure compliance with data minimization principles.
+
+## 5. User Administration
+
+### 5.1 Access Control
+
+- Access to AI technologies must be granted based on role-specific requirements.
+- Periodic reviews of access rights must be conducted to ensure compliance with the principle of least privilege.
+- Mechanisms for tracking and logging user activities related to AI systems must be implemented.
+
+### 5.2 User Training
+
+- Users must undergo training on ethical AI use, data protection, and policy compliance.
+- Continuous education must be provided to accommodate evolving AI technologies and regulations.
+
+## 6. Assessment of AI Vendors
+
+### 6.1 Vendor Selection
+
+- Vendors must demonstrate compliance with international data protection and privacy standards.
+- AI solutions must be evaluated for ethical use, bias mitigation, and transparency.
+
+### 6.2 Security and Compliance
+
+- Vendors must provide evidence of regular security audits and compliance with relevant cybersecurity standards.
+- Incident response plans and data breach notification procedures must be in place.
+
+### 6.3 Performance and Reliability
+
+- Vendors should offer performance guarantees and uptime Service Level Agreements.
+- AI solutions must undergo rigorous testing within the Company context before full-scale deployment.
+
+### 6.4 Vendor Transparency
+
+- Vendors should be able to provide detailed information about their AI models, including how they are trained, the data used, and potential biases.
+- Vendors must disclose any third-party integrations and data-sharing practices.
+
+## 7. Compliance and Ethics
+
+### 7.1 Regular Audits
+
+- AI deployments must be subject to regular internal and external audits to ensure policy compliance and ethical use.
+- Audit findings must be addressed promptly to mitigate any identified risks.
+
+### 7.2 Ethical Considerations
+
+- AI technologies will be used in a manner that respects the dignity, rights, and freedoms of all individuals.
+- Decisions that significantly affect individuals must have an option for human review.
+
+### 7.3 Continuous Improvement
+
+- AI systems must be regularly updated to incorporate new ethical standards or legal actions.
+
+## 8. Policy Review and Updates
+
+This policy should be reviewed annually or more frequently as needed to reflect changes in technology, business practices, or legal requirements.
+
+## 9. Acknowledgement
+
+All employees, contractors, and third-party partners must acknowledge their understanding and commitment to comply with this AI policy.
+
+## 10. Appendix
+
+### Appendix A — Policy Acknowledgment
+
+I have received a copy of the Company's AI Policy. I have read and understand the policy. I agree to observe the terms and conditions of this policy.
+
+Signed Name: _____________________________________________________________
+
+Printed Name: _____________________________________________________________
+
+Date: _____________________________________________________________
+
+### Appendix B — Revision History
+
+| Date | Version | Description | Approved By |
+|------|---------|-------------|-------------|
+|      | 1.0     | Initial release |           |`;
+}
+
+function getMDPContent() {
+  return `# Mobile Device Policy
+
+_______________
+
+**Version:** 1.0
+**Approval Date:** {{DATE}}
+**Primary Contact:** {{CONTACT}}
+
+---
+
+## Contents
+
+1. Purpose
+2. Scope
+3. Objectives
+4. Responsibilities
+5. Policy & Appropriate Use
+6. User Administration
+7. Security and Device Management
+8. Protocols
+9. Appendix
+
+---
+
+## 1. Purpose
+
+This policy establishes guidelines to ensure the secure and responsible use of mobile devices within _______________ (hereafter referred to as "the Company").
+
+The purpose of this policy is to protect sensitive information from unauthorized access or loss while enabling staff to use mobile technology. By defining required security controls and user behaviors, the policy helps prevent data breaches that could harm our guests, business reputation, or lead to legal/regulatory violations.
+
+## 2. Scope
+
+This policy applies to all employees, contractors, and third-party personnel (collectively "users") of the Company, including staff at corporate offices and managed hotel properties.
+
+It covers any mobile device used to access, store, transmit, or process Company or guest data, regardless of ownership. This includes Company-issued devices as well as employee-owned devices used for work purposes (Bring Your Own Device, BYOD).
+
+Types of devices in scope include, but are not limited to:
+
+- Smartphones
+- Other mobile/cellular phones
+- Tablets
+- Laptops
+- Wearable Devices
+- Any other mobile device capable of storing corporate data and connecting to a network
+
+All mobile and IoT connectivity will be centrally managed by the Company's IT department using authentication and strong encryption.
+
+While personal devices are not directly managed, users must follow the same security protocols; non-compliance will result in immediate suspension of network access to protect Company infrastructure.
+
+This policy is complementary to other Company policies on data protection, privacy, and acceptable use of technology; in case of overlap, the more restrictive policy applies.
+
+## 3. Objectives
+
+- Safeguard sensitive data on mobile devices to prevent unauthorized disclosure from loss, theft, or misuse.
+- Meet or exceed data protection framework compliance (e.g. PCI DSS) by enforcing security controls, breach reporting, and cardholder data safeguards.
+- Implement strong authentication, encryption, anti-malware and network access controls to enable safe, convenient access to business systems.
+- Establish clear rules for acceptable, business-focused device use that uphold productivity and accountability.
+- Ensure secure operational continuity across Company-owned and BYOD devices through consistent IT support, provisioning, and incident response.
+
+## 4. Responsibilities
+
+To ensure effective governance of mobile device use and protection of Company data, the following roles and responsibilities are defined:
+
+- **_______________ [Name, Title]:** Overall responsibility for the confidentiality, integrity, and availability of corporate data.
+- **_______________ [Name, Title]:** Execution and maintenance of information technology and information systems, as delegated.
+- **IT Staff:** Follow and enforce procedures and policies for managing information technology and systems.
+- **All Employees:** Act in accordance with Company policies and procedures at all times.
+
+## 5. Policy & Appropriate Use
+
+All users must adhere to the following acceptable use guidelines whenever using mobile devices to conduct Company business or access Company resources. These rules apply to both Company-issued and personal BYOD devices when used for work purposes.
+
+### 5.1 Business Purpose
+
+Mobile devices provided by the Company are to be used primarily for legitimate business activities. Limited personal use is permitted on Company devices, but it should be minimal and must not interfere with work duties.
+
+Personal use of any device during working hours must not distract from job responsibilities or negatively impact service quality to guests or operations.
+
+Excessive non-business use of devices during work hours is prohibited, as it can reduce efficiency.
+
+### 5.2 Professional Conduct
+
+All usage of mobile devices must comply with Company codes of conduct and HR policies.
+
+Users shall not engage in any illegal activities, harassment, or inappropriate behavior via mobile devices. The download or upload of inappropriate, obscene, or illegal content using the Company's networks or devices is strictly forbidden.
+
+Company-provided internet access on devices must not be used to visit malicious or non-business sites that could jeopardize network security.
+
+### 5.3 Safety
+
+Employees must never use a mobile phone (for calls, texts, or apps) while driving a vehicle on Company business, except with a hands-free device and in compliance with local laws.
+
+### 5.4 Privacy and Confidentiality
+
+Users must not use mobile device features in a manner that could compromise privacy or confidential information. The use of device cameras, voice recorders, or video functions to capture any confidential Company information, guest data, or images of guests without authorization is strictly prohibited.
+
+### 5.5 Authorized Apps and Services
+
+Only Company-approved applications and services may be used for accessing or storing Company data on mobile devices.
+
+Users must not install or use unapproved apps or cloud services that have not been vetted by IT when handling Company information.
+
+The installation of any app that could pose a security risk or that duplicates the function of approved corporate apps is prohibited. If in doubt about whether an app is permitted, users should consult IT before installing or using it for work.
+
+### 5.6 Device Integrity
+
+Users may not jailbreak, root, or otherwise tamper with device operating systems or security settings on devices that connect to Company resources. Bypassing built-in security controls is considered a serious violation.
+
+Users shall not disable or uninstall required security software (such as mobile antivirus or MDM agents) installed by the Company.
+
+### 5.7 Network Use
+
+When accessing Company systems, users must only use approved networks and secure connection methods. Public or unsecured Wi-Fi networks (such as the guest Wi-Fi) should be avoided for conducting Company business, especially any involving sensitive data or card payments, unless a Company-provided VPN is actively used.
+
+The Company may enforce network access policies that require mobile devices to connect via a Secure VPN for any access to internal systems. Users should follow all instructions for connecting through the approved secure channels.
+
+## 6. User Administration
+
+This section outlines how mobile devices and user access are administered under this policy, covering provisioning, approvals, and user lifecycle events.
+
+### 6.1 Device Approval & Enrollment
+
+Prior to using a mobile device for any work-related access, the device must be approved and registered with the IT department. The IT team will maintain an inventory of authorized mobile devices and supported software/apps.
+
+All approved devices (including BYOD) must be enrolled in the Company's Mobile Device Management (MDM) system if applicable, or other prescribed security management system, before accessing sensitive resources.
+
+### 6.2 User Onboarding
+
+As part of new hire orientation or whenever a current employee first requests work access on a mobile device, the user must review and accept this Mobile Device Policy and any related agreements.
+
+No user will be granted access to Company networks or data via mobile device without signing the Policy Acknowledgment (Appendix A) confirming they understand and agree to comply with these rules.
+
+### 6.3 Access Control and Accounts
+
+Each user will be provided unique credentials for accessing Company applications.
+
+Users must never share their passwords or saved sessions with anyone, including co-workers. Saving of Company passwords or authentication tokens in unsecured apps or browsers on the device is not allowed.
+
+Users are responsible for all actions taken with their credentials and must promptly inform IT if they suspect their account is compromised.
+
+### 6.4 Support
+
+For Company-owned devices issued to employees, IT will provide full device support, including hardware maintenance, OS/software updates, and replacement or repair as needed.
+
+Users of Company devices should have no expectation of personal privacy on the device; while personal usage may be allowed as noted under Acceptable Use, the device and its data can be monitored or inspected by the Company for compliance at any time (in accordance with applicable law).
+
+For personal BYOD devices, IT will support only connectivity and approved work applications. The user is responsible for their own device's hardware and any non-work apps.
+
+### 6.5 Offboarding
+
+When an employee leaves the Company or a contractor's engagement ends, their access to Company IT resources via mobile device will be promptly revoked. For Company-issued devices, **the device and all related accessories must be returned to the Company** on or before the user's last day.
+
+Failure to return a Company device or returning it with unreasonable damage may result in the Company charging the user for repair or replacement costs. For BYOD users, IT will remotely remove all Company applications and data from the user's personal device (via MDM or similar) when access is terminated.
+
+### 6.6 Lost or Replacement Company Devices
+
+If the Company issues a new device, the user must return the old device to IT for decommissioning. IT will ensure all Company data is wiped from the retired device before disposal or reassignment.
+
+## 7. Security and Device Management
+
+All mobile devices used under this policy must implement the security measures below. The IT department is responsible for establishing and enforcing these technical requirements, and users must not disable or circumvent them.
+
+### 7.1 Authentication
+
+Every mobile device used for Company purposes must be secured with a strong passcode or password meeting the Company's complexity requirements.
+
+4-digit PINs alone are not considered sufficient.
+
+Where available, the use of biometric locks (fingerprint, facial recognition) can supplement but not replace the password.
+
+Devices should be set to auto-lock after a short period of inactivity (e.g. 5 minutes) to prevent unauthorized access if the device is left unattended.
+
+### 7.2 Encryption
+
+All Company data stored on mobile devices must be encrypted in compliance with industry standards.
+
+This includes enabling full-device encryption on smartphones, tablets, and laptops. Modern mobile operating systems (iOS, Android, Windows) have built-in encryption — these must be turned on for any device with Company email or data.
+
+No sensitive passwords or confidential information may be stored in clear text on a mobile device.
+
+For laptops, full disk encryption (FDE) using approved software is required.
+
+### 7.3 Device Configuration & MDM
+
+If applicable, a Mobile Device Management (MDM) solution may be used to centrally manage security settings on all mobile devices that access corporate data. Prior to connecting to Company resources, devices must be enrolled in any applicable MDM and made "managed" by the IT department.
+
+Any attempt by a user to uninstall or bypass applicable MDM controls is strictly forbidden and will result in immediate revocation of access.
+
+### 7.4 Malware Protection
+
+Mobile devices must have approved anti-malware/anti-virus software installed and active, if such software is available for the platform.
+
+Users should never disable or turn off their security software while using the device for Company business.
+
+### 7.5 Network Security
+
+Connections from mobile devices to Company systems must be secure. Remote access to internal networks requires use of the Company's SSL VPN or other encrypted channel as provided.
+
+All network communication of sensitive data should be encrypted in transit via VPN or HTTPS.
+
+### 7.6 Access Control
+
+Systems accessed via mobile devices will enforce the same role-based access and least privilege principles as on desktop access.
+
+Important systems may also employ two-factor authentication (2FA) on mobile devices. Users are expected to comply with any such 2FA requirements and not attempt to bypass them.
+
+### 7.7 Physical Security of Devices
+
+Users are responsible for the physical safeguarding of the mobile device at all times. Devices should never be left unattended in insecure locations. When not in use, devices must be kept locked in a secure drawer, office, or hotel safe.
+
+### 7.8 Storage and Backup
+
+Employees must avoid storing files containing sensitive data locally on devices unless absolutely necessary and approved.
+
+Personal cloud services must not be used to back up corporate data without explicit permission.
+
+### 7.9 Lost or Stolen Device
+
+In the event a mobile device that has access to Company data is lost, stolen, or suspected of being compromised, the user **must report it to IT immediately** (within 24 hours or sooner).
+
+### 7.10 Payment Card Data
+
+Mobile devices that handle payment card transactions (e.g. mobile POS devices, tablets with card readers) are subject to stringent controls to remain PCI DSS compliant. Only Company-owned devices are allowed to be used for payment processing.
+
+The Company will use PCI-validated payment applications and card reader hardware; no unapproved payment apps may be installed. Payment devices should communicate via secure networks and never over public Wi-Fi for card processing.
+
+If a payment device is shared among multiple employees or shifts, a checkout log must be kept tracking who has the device, when it was used, for what event or location, and confirming it was returned secure.
+
+## 8. Protocols
+
+### 8.1 Audits
+
+The Company may establish and review audit trails without prior notice. These trails track the connection of external devices to the Company's networks and may be used to investigate potential breaches or misuse.
+
+### 8.2 Incident Reporting
+
+Users must immediately report any actual or suspected incident of unauthorized data access, data loss, or disclosure of the Company's resources (e.g., databases, networks, or systems) to their manager and the Company's IT department.
+
+### 8.3 Training and Acceptance
+
+All mobile device users will be required to be trained on this policy.
+
+Access to Company systems via mobile devices will only be granted after users have formally acknowledged and accepted the terms of this policy. Employees may request clarification before signing; however, declining to accept the policy will result in denial of mobile device access to Company resources.
+
+## 9. Appendix
+
+### Appendix A — Policy Acknowledgment
+
+I have received a copy of the Company's Mobile Device Policy. I have read and understand the policy. I agree to observe the terms and conditions of this policy.
+
+Employee Signature: _________________________ Date: ______________
+
+Employee Name (print): _____________________ Department: __________
+
+### Appendix B — Revision History
+
+| Date | Version | Description | Approved By |
+|------|---------|-------------|-------------|
+|      | 1.0     | Initial release |           |`;
+}
+
+function getVPCContent() {
+  return `# Vendor Phone Call Validation SOP
+
+_______________
+
+**Verifying Vendor Phone Calls**
+Standard Operating Procedure (SOP)
+
+**Effective Date:** {{DATE}}
+**Version:** 1.0
+**Primary Contact:** {{CONTACT}}
+
+---
+
+## Contents
+
+1. Introduction
+2. Purpose
+3. Scope
+4. Responsibilities
+5. Procedure
+6. Referenced Documents
+7. Appendix A — Emergency Contact List
+8. Appendix B — Official Vendor Contact List
+9. Appendix C — Vishing Red Flags
+10. Appendix D — Vishing Examples
+
+---
+
+## 1. Introduction
+
+Hotel staff are increasingly targeted by vishing, or phone call scams, which can lead to significant financial losses and damage to our hotel's reputation.
+
+These scams often target front desk and night shift teams, with criminals pretending to be trusted vendors to deceive employees into providing sensitive information or granting access to systems.
+
+Attackers often impersonate vendors that hotel teams frequently interact with. This includes:
+
+- Managed Service Providers (MSP)
+- IT Support Desks
+- Property Management System (PMS) Representatives (e.g. OnQ and OPERA)
+- Third-Party Booking Agents
+- Brand or Loyalty Program Customer Care Agents
+- Company Executive Leadership
+
+During these calls, scammers may request employees download malicious files, allow remote access for "system updates," or hand over login credentials.
+
+## 2. Purpose
+
+To safeguard company systems and sensitive data, this Standard Operating Procedure (SOP) outlines a clear process for verifying vendor authenticity, ensuring the identification and prevention of potential vishing attacks.
+
+## 3. Scope
+
+This procedure applies to the relevant departments of _______________. As such, employees, contractors, and other personnel working within these departments are required to adhere to this procedure and any associated procedures, processes, and policies.
+
+## 4. Responsibilities
+
+This SOP establishes responsibilities for employees, management, and IT departments to ensure the authenticity of vendor phone call requests.
+
+**Employees:**
+
+- Follow this SOP when receiving phone call requests from vendors to validate the authenticity of the call.
+- Report any suspicious or unusual requests to a supervisor or IT immediately.
+- Never provide sensitive information (such as passwords) or allow remote access without following proper validation procedures.
+
+**Management:**
+
+- Ensure all employees are aware of vendor phone call validation procedures.
+- Provide ongoing training to recognize and prevent vishing attempts.
+- Reinforce the importance of phone call validation during meetings and communications.
+- Monitor compliance with validation procedures and take corrective actions when necessary.
+- Ensure that this SOP is reviewed and updated regularly.
+
+**IT Department:**
+
+- Provide support and guidance when employees are uncertain about the legitimacy of a vendor call.
+- Maintain up-to-date contact lists for key vendors to help employees verify calls.
+
+## 5. Procedure
+
+### Step 1: Initial Call Reception
+
+**Record Key Details**
+
+- Capture the caller's full name, company name, and contact information (phone number, email address).
+- Document the date, time, and duration of the call.
+- Record the reason for the call, including specific details regarding their request (e.g., system updates, troubleshooting).
+
+### Step 2: Validation Process
+
+**Inform Caller of Verification Requirement**
+
+- Inform the caller that their identity needs to be verified in accordance with company policy before proceeding.
+- Request the vendor's official company contact number and corporate email address for follow-up.
+
+**Cross-Check Information with Internal Records**
+
+- Compare the provided details with existing vendor records using one or more of the following sources:
+- The company's vendor management system or approved vendor list.
+- Records of official communications, such as email exchanges, contracts, or service agreements.
+- The official website of the vendor.
+- If discrepancies are found or the caller refuses to provide details, request they send an email from their official company email address for further verification before proceeding.
+
+### Step 3: Determine Authenticity of the Request
+
+**Identify Potential Vishing Red Flags**
+
+- Demands urgent action without proper validation.
+- Refuses or hesitates to provide verifiable contact information.
+- Requests sensitive information such as login credentials, financial data, or access to internal systems.
+- Demonstrates unusual behavior inconsistent with previous interactions.
+
+**Validate by Calling Back**
+
+- If the caller passes the initial verification, inform them that you will return their call.
+- Use the validated contact details to call the vendor back and confirm the legitimacy of the request.
+- Proceed only if the identity and request are fully authenticated.
+
+### Step 4: Protocol for After-Business-Hours Calls
+
+**Documentation and Deferral**
+
+- Document the call details (caller information, reason for call, time/date) and all verification steps taken.
+- Inform the caller that the request will be deferred to the next business day.
+
+**Next Business Day Verification**
+
+- Notify management or day-shift staff of the vendor's request, ensuring they follow proper verification.
+- Leave clear notes regarding the vendor's request so the agent may re-verify the request before proceeding.
+
+### Step 5: Procedure for Suspicious Calls
+
+**Withhold Sensitive Information**
+
+- Do not provide any sensitive information (e.g., passwords, system access) or initiate any troubleshooting steps requested by the caller.
+- Do not allow screen-sharing, remote viewing, or any other access to company devices.
+
+**Escalate and Report the Incident**
+
+- Immediately report the suspicious call to your direct supervisor and IT department.
+- Provide all documented details, including the caller's information, the nature of the request, and any verification steps taken.
+- Follow internal security protocols for potential security incidents.
+
+### Step 6: Conclusion and Follow-Up Actions
+
+**For Verified, Authentic Calls**
+
+- If the vendor and their request are confirmed as authentic, proceed with normal troubleshooting or service procedures as per company guidelines.
+
+**For Unverified or Suspicious Calls**
+
+- If the call is deemed suspicious or cannot be verified, ensure no actions are taken in response to the caller's request.
+- Follow up with IT for additional security checks if needed.
+- Document the incident in accordance with internal policies to aid in future incident tracking.
+
+## 6. Referenced Documents
+
+- **Company Vendor Management System (VMS) Documentation** — Details process for verifying vendor contact information and contracts.
+- **Company Information Security Policy** — Outlines the overarching security protocols.
+- **Incident Reporting Procedure** — Internal guidelines for reporting incidents.
+- **Official Vendor List / Approved Vendor Database** — Updated list of authorized vendors for reference.
+- **Vishing Training Materials** — Training on vishing and social engineering attack prevention.
+
+## 7. Appendix A — Emergency Contact List
+
+| Contact | Phone | Email Address | After Hours |
+|---------|-------|---------------|-------------|
+| [Management] | — | — | — |
+| [IT Department] | — | — | — |
+| [Security Team] | — | — | — |
+
+## 8. Appendix B — Official Vendor Contact List
+
+| Vendor Name | Phone Number | Email Address | Website / Portal | Notes |
+|-------------|--------------|---------------|------------------|-------|
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+| | | | | |
+
+## 9. Appendix C — Vishing Red Flags
+
+### Urgency
+
+- Insists a task must be completed immediately, such as providing login credentials, making a financial transaction, or granting remote access to systems.
+- Threatens negative consequences (e.g., system downtime or job loss) if you do not comply quickly.
+
+### Unfamiliarity
+
+- Claims to represent a vendor or internal department that is unknown or not regularly interacted with.
+- Avoids providing verifiable contact details or claims they cannot be reached by official channels.
+
+### Inconsistency
+
+- Provides inaccurate or inconsistent information about the hotel's systems, vendors, or internal processes.
+- Mispronounces vendor names or hotel systems (e.g., PMS).
+- Offers only vague details.
+
+### Sensitive Information
+
+- Requests confidential information, such as employee passwords, guest credit card details, financial data, or login credentials.
+- Legitimate vendors or internal teams would not ask for sensitive information over the phone.
+
+### Remote Access
+
+- Instructs the employee to download software, click a link, or grant remote access to hotel systems for "maintenance" or "urgent updates."
+- This is a common tactic used to install malware or compromise systems.
+
+### Unusual Behavior
+
+- Sounds evasive when asked for details, changes the subject, or becomes defensive when questioned.
+- Avoids giving a direct answer about their company or the specifics of the request.
+
+### Spoofed Number
+
+- Calls from what appears to be a local number, internal extension, or even a well-known vendor number, but the caller's behavior doesn't align with the vendor's standard actions.
+
+### Unusual Timing
+
+- Calls at odd hours, such as the night audit shift or outside of the vendor's regular business hours.
+- Criminals often target shifts where fewer senior staff or IT personnel are available.
+
+### Unreliable Follow-Up
+
+- Fails to send follow-up emails or use the official communication channels after the initial call.
+
+## 10. Appendix D — Vishing Examples
+
+### System Update
+
+"I'm calling from [PMS] support. I need to apply a critical update to your system so the night audit processes correctly. Could you please provide your IP address and go to this website so I can gain remote access to your computer?"
+
+### Unusual Activity
+
+"This is [NAME] with the IT help desk. We noticed unusual activity from your account and need to take immediate action. To get started, can you provide me with the username and password you use to access your computer?"
+
+### Suspicious Email Attachments
+
+"Hi, I am calling with [THIRD-PARTY BOOKING] regarding an unresolved complaint from our mutual customer. I will be sending an email now with the formal complaint attached. Please stay on the line and let me know when you have received it."
+
+### Chargeback Requests
+
+"I'm calling from [HOTEL BRAND]'s customer care desk. I'm currently speaking with a guest on the other line who stayed at your property. We need to process an immediate refund. Unfortunately, I'm having some issues getting it to go through on my end. Could you help me with processing the refund?"`;
+}
+
+function getVCFContent() {
+  return `# Video Conferencing Policy
+
+_______________
+
+**Version:** 1.0
+**Approval Date:** {{DATE}}
+**Primary Contact:** {{CONTACT}}
+
+---
+
+## Contents
+
+1. Purpose
+2. Scope
+3. Objectives
+4. Responsibilities
+5. Policy & Appropriate Use
+6. Security
+7. Privacy and Data Protection
+8. Appendix
+
+---
+
+## 1. Purpose
+
+This policy establishes guidelines to ensure the secure and responsible use of video conferencing within _______________ ("Company").
+
+It defines standards for virtual meetings to ensure professional communication, protects guest privacy, and supports operational continuity. By preventing unauthorized access and misuse, it reduces the risk of data breaches and reputational harm while ensuring all meetings reflect the Company's values and service standards.
+
+## 2. Scope
+
+This policy applies to all employees, contractors, and third-party personnel ("Users") of the Company.
+
+It covers any video conferencing activity used to conduct Company business or to discuss Company or guest information, regardless of platform or device used. This includes meetings on Company-issued systems as well as work-related video calls conducted via employee-owned devices or accounts ("Bring Your Own Device" / BYOD).
+
+Major platforms in scope include, but are not limited to:
+
+- Zoom
+- Microsoft Teams
+- Google Meet
+- All other Company-approved video/chat systems
+
+Users must follow these requirements when participating in work-related video conferences, whether using Company-owned or personal devices.
+
+Company IT will centrally manage official video conferencing accounts and settings to enforce security such as authentication and encryption.
+
+Personal devices or accounts, if used for Company meetings, must adhere to the same security protocols and settings.
+
+This policy is complementary to other Company policies on data protection, privacy, and acceptable use of technology. In case of overlap, the more restrictive policy applies.
+
+## 3. Objectives
+
+- Establish expectations for professional conduct and communication across all video conferences.
+- Safeguard personal and sensitive guest information discussed or displayed during video calls, in compliance with privacy regulations.
+- Reduce the risk of unauthorized access, data breaches, or misuse of video conferencing platforms, including awareness of threats such as AI deepfake impersonations.
+- Align video conferencing practices with Company policies, data protection frameworks, and relevant industry standards (e.g., PCI DSS, GDPR).
+- Ensure that video interactions reflect the Company's values and service standards, preserving trust with guests, partners, and colleagues.
+
+## 4. Responsibilities
+
+To ensure effective governance of video conferencing usage and the protection of Company data, the following roles and responsibilities are defined:
+
+- **_______________ [Name, Title]:** Overall responsibility for the confidentiality, integrity, and availability of Company communications and data shared via video conferencing.
+- **_______________ [Name, Title]:** Execution and oversight of information technology and systems related to video conferencing.
+- **IT Staff:** Configure and secure approved video conferencing platforms; provision and deprovision user accounts; enforce meeting security settings; provide technical support and training to Users; and monitor for compliance and threats.
+- **Managers / Team Leaders:** Ensure team members understand and abide by this policy and report or address any violations.
+- **All Employees (Users):** Act in accordance with Company policies and procedures at all times.
+
+## 5. Policy & Appropriate Use
+
+Users must adhere to the following acceptable use guidelines when using video conferencing for Company business. These rules apply to both Company-provided and personal BYOD devices or accounts whenever they are used for work purposes.
+
+### 5.1 Business Purpose
+
+Company-provided video conferencing services are to be used primarily for legitimate Company business communications. Limited personal use is permitted on Company systems but should be minimal and must not interfere with work duties.
+
+Excessive non-business use of video conferencing during work hours is prohibited.
+
+Employees should not use personal video chat accounts for work-related meetings unless explicitly authorized, and then only in compliance with this policy.
+
+### 5.2 Professional Conduct
+
+All use of video conferencing must comply with Company codes of conduct and HR policies.
+
+Users shall not engage in any form of harassment, discrimination, or inappropriate behavior during video conferencing.
+
+Users must refrain from using Company networks or devices to join external video meetings that violate laws or security protocols.
+
+Any misuse of video conferencing that could defame the Company or violate someone's rights is grounds for disciplinary action.
+
+### 5.3 Authorized Platforms
+
+Employees may only use Company-approved video conferencing applications and services for conducting Company business virtually. Using unapproved or consumer-grade video apps for work purposes is not allowed without written IT authorization.
+
+All business meetings should be hosted on official Company accounts to ensure proper security settings and retention of records when required.
+
+Using unauthorized platforms, features, or plug-ins for video conferencing to discuss Company matters is prohibited.
+
+### 5.4 Meeting Invitations & Access
+
+Users must not share video conference links or passwords publicly or with anyone outside the intended participants.
+
+Meeting invites should only be sent to authorized attendees, and if an invite is received unexpectedly or from an unknown source, it should be verified before joining.
+
+Meeting IDs or passcodes should never be posted publicly.
+
+Meetings involving sensitive information must not use recurring links. Instead, hosts must generate one-time meeting IDs and passcodes and distribute them only through secure channels.
+
+Users must use unique meeting credentials or new passwords for each meeting whenever possible rather than reusing old meeting codes.
+
+## 6. Security
+
+All Users are expected to follow the security best practices listed below to protect the confidentiality and integrity of Company video conferences.
+
+### 6.1 Access Control & Authentication
+
+Video conferencing meetings should be configured to allow only authorized participants.
+
+Hosts must configure meetings with security settings enabled, including passwords or PIN codes, waiting rooms/lobbies, and restrictions limiting entry to authenticated Users only.
+
+Once all expected attendees have joined, the host should lock the meeting if the platform allows.
+
+If an attendee is not a recognized authorized User or participant, the host must remove that individual and report the incident to IT and management immediately.
+
+IT will enforce baseline configurations such as requiring passwords on all meetings and enabling encryption for Company accounts.
+
+### 6.2 Platform Security & Updates
+
+Users must keep the video conferencing software and related applications updated to the latest versions to benefit from security patches. IT will push updates for Company-managed devices. BYOD Users are expected to promptly install updates for the conferencing apps on their personal devices.
+
+All devices used for video calls should have up-to-date antivirus/anti-malware protection and adhere to Company mobile device policies.
+
+Unsecured public Wi-Fi networks should not be used for joining Company video meetings. If a public network must be used, employees should activate a Company-approved VPN or other encryption measure.
+
+The Company may restrict or block video conferencing access from devices or networks deemed insecure.
+
+### 6.3 Confidentiality
+
+Users must exercise caution to prevent unauthorized disclosure of sensitive information during video conferencing meetings.
+
+For high-risk or confidential video conferencing, the identities of all participants should be verified.
+
+Employees should be made aware of the risks posed by AI-driven deepfake technology, which can generate convincing but fraudulent video or audio impersonations of trusted individuals.
+
+If there is any uncertainty about a participant's identity, the session should be paused and the individual's identity verified through a secondary channel.
+
+### 6.4 Presentation Controls
+
+Screen sharing must not expose sensitive information. The host may disable participants' ability to screen-share without permission to prevent accidental or malicious sharing of inappropriate content.
+
+### 6.5 Recording
+
+Video conferences should not be recorded unless there is clear business need.
+
+If a meeting must be recorded, the host must inform all participants and obtain consent before starting the recording. Only Company-approved recording tools or platform features should be used to record.
+
+Storage and access to recorded meetings must be secured, with recordings saved only to Company-designated storage with appropriate access controls.
+
+All recordings must be stored, managed, and disposed of in accordance with the Company's data retention policies.
+
+### 6.6 External Participants
+
+When hosting meetings with guests or external partners, Users must generate a unique meeting link or use the platform's webinar mode to ensure external attendees cannot access internal sessions. Guests must be admitted only through a waiting room, and hosts should admit only verified and expected individuals.
+
+## 7. Privacy and Data Protection
+
+The Company is committed to protecting personal data and privacy during video conferencing sessions in line with applicable laws and Company privacy policies.
+
+### 7.1 Confidentiality
+
+Information exchanged in Company video conferences is considered confidential unless explicitly classified otherwise. Users must not disclose or discuss meeting details outside the intended audience.
+
+If joining a video conference in a public area, Users must ensure that no unauthorized person can overhear the discussion or view their screen. Headphones or a headset must be used to keep audio private.
+
+### 7.2 Personal Data and Guest Privacy
+
+When video meetings involve sensitive information, Users must adhere to Company data handling policies. Only the minimum necessary personal data should be referenced or displayed.
+
+### 7.3 Recording and Consent
+
+Any video conferencing meeting that involves sensitive data or confidential content should not be recorded without a legitimate business purpose. If a meeting involving this content must be recorded, the host is required to obtain prior, documented consent from all participants.
+
+Recorded video conferences containing sensitive information are subject to Company data protection policies, must be stored securely with restricted access, and retained only as long as necessary.
+
+### 7.4 Meeting Data
+
+Data and content from video conferencing should be treated as Company property and protected accordingly.
+
+Users must not download, excerpt, or distribute video conferencing meeting content to external parties unless authorized for a legitimate business reason.
+
+If meeting recordings or transcripts are shared with third-party service providers, this must be covered by a formal agreement requiring the provider to keep the data secure and confidential.
+
+### 7.5 Privacy
+
+Features that capture or transcribe video conferencing content may only be enabled if they are Company-approved and all participants agree.
+
+IT will configure default video conferencing account settings to prioritize privacy and security. Users must not alter or bypass these controls.
+
+### 7.6 Incident Reporting
+
+Users must immediately report any suspected security incident or policy violation related to video conferencing to management and IT.
+
+## 8. Appendix
+
+### Appendix A — Policy Acknowledgment
+
+I have received a copy of the Company's Video Conferencing Policy. I have read and understand the policy. I agree to observe the terms and conditions of this policy.
+
+Employee Signature: _________________________ Date: ______________
+
+Employee Name (print): _____________________ Department: __________
+
+### Appendix B — Revision History
+
+| Date | Version | Description | Approved By |
+|------|---------|-------------|-------------|
+|      | 1.0     | Initial release |           |`;
+}
 
 function getAUPContent() {
   return `# Acceptable Use Policy
@@ -2102,7 +4563,7 @@ state.policies.push({
 });
 
 renderSidebarFolders();
-openTemplate('aup', document.querySelector('.sidebar-item.active'));
+openTemplate('isp', document.querySelector('.sidebar-item.active'));
 </script>
 </body>
 </html>
