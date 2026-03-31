@@ -602,9 +602,11 @@
     }
     .sidebar.open { transform: translateX(0); }
 
-    /* Main takes full width */
-    .app-body { overflow: visible; }
-    .main { width: 100%; overflow: hidden; }
+    /* Main takes full width — keep flex chain intact for scrolling */
+    .app-body { overflow: hidden; height: calc(100vh - var(--topbar-h)); }
+    .main { width: 100%; overflow: hidden; height: 100%; }
+    .view { height: 100%; }
+    .doc-body { overflow-y: auto; -webkit-overflow-scrolling: touch; }
 
     /* Content header */
     .content-header { padding: 16px; }
@@ -1025,10 +1027,13 @@
       </div>
       <div class="doc-body">
         <div class="editor-tabs">
-          <div class="editor-tab active" onclick="switchEditorTab('quickfill', this)"><svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Quick Fill</div>
-          <div class="editor-tab" onclick="switchEditorTab('text', this)"><svg style="width:12px;height:12px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg> Edit Content</div>
+          <div class="editor-tab active" onclick="switchEditorTab('text', this)"><svg style="width:12px;height:12px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg> Edit Content</div>
+          <div class="editor-tab" onclick="switchEditorTab('quickfill', this)"><svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Quick Fill</div>
         </div>
-        <div id="editor-tab-quickfill">
+        <div id="editor-tab-text">
+          <div class="rich-editor doc-preview" id="rich-editor-area" contenteditable="true" spellcheck="true"></div>
+        </div>
+        <div id="editor-tab-quickfill" style="display:none;">
           <div class="quickfill-panel">
             <h3><svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="var(--sky)" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Quick Fill — Replace Blanks</h3>
             <p>Enter your details below and we'll automatically populate all the blanks in this policy.</p>
@@ -1053,16 +1058,12 @@
           </div>
           <div id="quickfill-preview"></div>
         </div>
-        <div id="editor-tab-text" style="display:none;">
-          <div class="rich-editor doc-preview" id="rich-editor-area" contenteditable="true" spellcheck="true"></div>
-        </div>
       </div>
     </div>
 
     <!-- MY POLICIES VIEW -->
     <div class="view" id="view-mypolicies">
       <div class="content-header">
-        <div class="content-breadcrumb"><span>My Policies</span></div>
         <div class="content-title">My Policies</div>
         <div class="content-subtitle">Your saved and customized policy documents</div>
       </div>
@@ -5300,6 +5301,7 @@ function openTemplate(id, clickedEl) {
   document.getElementById('editor-title').value = tpl.title;
   renderPreview(tpl.content);
   showView('template');
+  document.getElementById('doc-preview-body').scrollTop = 0;
 }
 
 function renderPreview(md) {
@@ -5453,7 +5455,7 @@ function startEditing() {
   document.getElementById('qf-contact').value = '';
   document.getElementById('quickfill-preview').innerHTML = '';
   const firstTab = document.querySelector('#view-editor .editor-tab');
-  if (firstTab) switchEditorTab('quickfill', firstTab);
+  if (firstTab) switchEditorTab('text', firstTab);
   showView('editor');
 }
 
@@ -5707,9 +5709,9 @@ function applyQuickFill() {
   content = content.replace(/_______________/g, company);
 
   loadRichEditor(content);
-  // Switch to text editor tab to show result
+  // Switch to Edit Content tab to show result
   const editorTabs = document.querySelectorAll('#view-editor .editor-tab');
-  if (editorTabs[1]) switchEditorTab('text', editorTabs[1]);
+  if (editorTabs[0]) switchEditorTab('text', editorTabs[0]);
   showToast('Quick Fill applied!');
 }
 
