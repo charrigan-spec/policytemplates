@@ -1318,6 +1318,9 @@
           <div class="sidebar-item" onclick="openTemplate('prv', this)">
             <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 01-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 011-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 011.52 0C14.51 3.81 17 5 19 5a1 1 0 011 1z"/></svg> Privacy Policy
           </div>
+          <div class="sidebar-item" onclick="openTemplate('plpp', this)">
+            <svg style="width:11px;height:11px;display:inline-block;vertical-align:middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Property-Level Privacy Policy
+          </div>
         </div>
       </div>
 
@@ -1430,7 +1433,7 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
               </div>
               <div class="homepage-card-title">Data Protection &amp; Privacy</div>
-              <div class="homepage-card-count">4 templates</div>
+              <div class="homepage-card-count">5 templates</div>
               <svg class="homepage-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </div>
 
@@ -1715,6 +1718,7 @@ const templates = {
   drp:   { title: 'Data Retention & Disposal Policy',       content: getDRPContent() },
   gdpr:  { title: 'Information Security Policy — GDPR',     content: getGDPRContent() },
   prv:   { title: 'Privacy Policy',                         content: getPRVContent() },
+  plpp:  { title: 'Property-Level Privacy Policy',           content: getPLPPContent() },
 
   // Access & Identity Management
   acp:   { title: 'Access Control Policy',                  content: getACPContent() },
@@ -2793,6 +2797,428 @@ An employee found to have violated this policy may be subject to disciplinary ac
 | Date | Version | Description | Approved By |
 |------|---------|-------------|-------------|
 |      | 1.0     | Initial release |           |`;
+}
+
+function getPLPPContent() {
+  return `# Property-Level Privacy Policy
+
+_______________
+
+**Version:** 1.0
+**Approval Date:** {{DATE}}
+**Primary Contact:** {{CONTACT}}
+
+---
+
+## Contents
+
+1. Purpose
+2. Scope
+3. Objectives
+4. Roles and Responsibilities
+5. Policy Statements
+6. Procedures
+7. Appendix
+
+---
+
+## 1. Purpose
+
+This Policy establishes the privacy requirements applicable to _______________ ("Company") and the Property for the lawful, fair, transparent, secure, and accountable handling of personal information. It defines the responsibilities of personnel who collect, access, use, disclose, transmit, retain, or dispose of personal information in the course of hotel operations.
+
+The purpose of this Policy is to:
+
+- Protect personal information processed by the Company and Property.
+- Define Corporate and Property responsibilities for handling personal information.
+- Support compliance with applicable privacy and data protection laws and with PCI DSS where payment account data is handled.
+- Establish consistent requirements for privacy requests, complaints, vendors, monitoring, risk assessments, retention, and incident reporting.
+
+This Policy supplements, and does not replace, the Company's public privacy notices, information security policies, records-retention schedule, incident response plan, payment card security program, contractual obligations, and other applicable policies.
+
+Where requirements overlap, the more restrictive applicable requirement shall govern. Any actual or suspected conflict shall be referred to the designated Privacy or Legal function for resolution.
+
+## 2. Scope
+
+This Policy applies to all employees, officers, managers, temporary personnel, interns, contractors, agency workers, and third parties who process personal information on behalf of the Company or Property (collectively, "Personnel").
+
+It applies to all personal information processed by or on behalf of the Company or Property, regardless of its format, location, system, or method of processing. This includes electronic, paper, verbal, visual, audio, and recorded information processed at the Property, remotely, by Corporate personnel, or by an approved service provider.
+
+Information that has been irreversibly anonymized so that an individual is no longer reasonably identifiable is outside the scope of this Policy. Pseudonymized, tokenized, encrypted, masked, or otherwise de-identified information remains in scope when it can reasonably be linked to an individual using additional information.
+
+## 3. Objectives
+
+- Ensure personal information is processed only for authorized and documented purposes.
+- Limit collection, access, disclosure, retention, and copying to what is necessary for the approved business purpose.
+- Maintain appropriate technical, administrative, and physical safeguards based on risk.
+- Protect payment account data in accordance with applicable PCI DSS requirements and approved payment processes.
+- Provide escalation paths for privacy rights requests, complaints, incidents, and high-risk processing.
+- Maintain records sufficient to demonstrate implementation, oversight, and corrective action.
+
+## 4. Roles and Responsibilities
+
+To support effective governance of this Policy and the protection of personal information, the following Company and Property roles and responsibilities are established:
+
+| Role / Title | Responsibility |
+|---|---|
+| [Name, Title] | Approve this Policy, assign accountable ownership, provide resources, and oversee material privacy risk and corrective action. |
+| Corporate Privacy / Legal / DPO | Determine legal applicability; maintain the privacy program; approve notices, lawful bases, rights-response processes, risk assessments, cross-border mechanisms, incident notifications, regulatory communications, and privacy contract terms. |
+| Information Security | Establish security requirements; manage access, encryption, logging, vulnerability management, incident response, and technical safeguards; support PCI DSS and privacy investigations. |
+| General Manager | Remain accountable for Property implementation, resource allocation, escalation, annual review, and integration of privacy requirements into operations. |
+| [Name, Title] — Property Privacy Coordinator | Coordinate Property privacy activities; maintain local logs and evidence; route requests, complaints, incidents, and proposed changes; support training, reviews, and remediation. |
+| Department Managers | Translate this Policy into department procedures; approve and review access; ensure appropriate collection, use, retention, disposal, training, and incident reporting; track corrective actions. |
+| Human Resources | Protect applicant, employee, payroll, benefit, medical, leave, performance, and background-check information; maintain approved employment notices and monitoring disclosures; coordinate employee rights requests. |
+| Finance / Accounting | Protect billing, payment, refund, tax, banking, vendor, and financial information; follow approved PCI DSS and retention requirements; prevent payment data from entering unapproved records. |
+| Sales / Marketing / Revenue | Use approved sources, notices, consent or preference mechanisms, suppression lists, and vendors; obtain review before new campaigns, profiling, enrichment, or secondary uses. |
+| Security / Loss Prevention | Protect CCTV, access-control, visitor, incident, evidence, and key-control records; restrict viewing, export, and release; follow approved monitoring and retention rules. |
+| IT / Engineering / Support | Use least-privilege access; protect production data; avoid unnecessary copying; maintain approved systems and secure support procedures; remove access promptly when no longer required. |
+| Procurement / Vendor Management | Complete privacy, security, and PCI DSS due diligence; ensure required contractual terms and approvals are in place before a vendor processes personal information or payment account data. |
+| All Personnel | Follow this Policy and approved procedures; access only what is needed; protect information; use approved systems; complete training; immediately report incidents, requests, complaints, or concerns. |
+| Third Parties | Comply with applicable contracts, documented instructions, confidentiality obligations, security requirements, retention/deletion instructions, incident-notification duties, and audit or evidence requirements. |
+
+### 4.1 Corporate–Property Privacy Governance
+
+Privacy governance and operational responsibilities are allocated between the Company's Corporate Privacy function and the Property. Corporate functions establish organization-wide privacy requirements and provide centralized oversight, while the Property implements those requirements within its operations.
+
+#### 4.1.1 Corporate Responsibilities
+
+The Corporate Privacy function, in coordination with Legal, Information Security, Human Resources, Compliance, and other appropriate functions, is responsible for:
+
+- Establishing and maintaining the Company's privacy governance framework, policies, standards, and procedures.
+- Evaluating applicable privacy and data protection requirements.
+- Coordinating data subject rights requests and privacy complaints.
+- Establishing requirements for privacy impact assessments, data protection impact assessments, and other privacy risk assessments.
+- Maintaining enterprise records of processing activities and data inventories with information provided by the Property.
+- Establishing requirements for vendor privacy reviews, data protection agreements, and cross-border data transfers.
+- Establishing privacy training and awareness requirements.
+- Coordinating regulatory inquiries, privacy audits, breach assessments, required notifications, and corrective actions.
+- Providing oversight of privacy and payment account data requirements applicable to Property operations.
+
+#### 4.1.2 Property Responsibilities
+
+The Property is responsible for:
+
+- Implementing applicable Company privacy policies, standards, and procedures.
+- Protecting personal information processed through Property operations.
+- Restricting the collection, access, use, disclosure, retention, and disposal of personal information to authorized business purposes.
+- Identifying and promptly escalating privacy requests, complaints, incidents, and suspected violations.
+- Maintaining accurate local data inventories, processing records, incident records, and other required documentation.
+- Providing information needed for privacy assessments, vendor reviews, regulatory inquiries, audits, and investigations.
+- Notifying the appropriate Corporate function before introducing or materially changing systems, vendors, monitoring activities, or other processing involving personal information.
+- Ensuring that applicable personnel complete required privacy and security training.
+- Implementing and documenting applicable PCI DSS controls where payment account data is handled.
+
+#### 4.1.3 Shared Responsibilities
+
+Shared Corporate and Property responsibilities include:
+
+- Privacy incident and breach investigations.
+- Data subject rights request fulfillment.
+- Privacy impact and risk assessments.
+- Records of processing activities and data inventory management.
+- Vendor due diligence and oversight.
+- Audit support and corrective-action management.
+- Training and awareness activities.
+- Retention, legal-hold, and secure-disposal activities.
+
+## 5. Policy Statements
+
+This Policy establishes privacy-specific requirements for the processing of personal information. Personnel shall also comply with the Company's Information Security Policy, Data Classification and Handling Policy, Records Retention Policy, Incident Response Plan, PCI DSS policies and procedures, Acceptable Use Policy, Vendor Management requirements, and other applicable standards and procedures, which are incorporated into this Policy by reference.
+
+Where applicable requirements overlap or conflict, the more restrictive requirement shall govern.
+
+### 5.1 Corporate Privacy Program and Public Notices
+
+The Property shall implement applicable Corporate privacy policies, standards, notices, and approved procedures. This Policy governs internal conduct, while approved privacy notices describe the Company's processing activities to individuals. Actual practices shall remain consistent with those notices and applicable contractual representations.
+
+- Personnel shall not create or modify privacy notices, consent language, privacy-rights responses, or data-sharing statements without Corporate Privacy or Legal approval.
+- New or materially changed collection, use, disclosure, monitoring, vendor arrangements, or processing purposes shall undergo required privacy and security review before implementation.
+- When the Property processes personal information on behalf of another controller, brand, owner, or business, Personnel shall follow documented instructions and shall not use the information for an independent purpose without approval.
+
+### 5.2 Privacy Principles and Authorized Processing
+
+The Company and Property shall process personal information in accordance with the following principles:
+
+| Principle | Requirement |
+|---|---|
+| Lawfulness, Fairness, and Transparency | Process personal information only for an approved purpose and under an applicable legal, contractual, or operational authority. |
+| Purpose Limitation | Collect and use personal information only for specified and legitimate purposes. Materially different uses require review and approval. |
+| Data Minimization | Collect, access, use, disclose, and retain only the personal information necessary for the approved purpose. |
+| Accuracy | Take reasonable steps to maintain accurate information and promptly route correction requests. |
+| Storage Limitation | Retain identifiable information only for the approved period, subject to applicable legal holds and preservation requirements. |
+| Integrity and Confidentiality | Protect personal information against unauthorized processing, loss, alteration, destruction, access, or disclosure. |
+| Accountability | Maintain ownership, approvals, records, and evidence sufficient to demonstrate implementation of applicable privacy requirements. |
+
+Personal information shall be processed only for approved business purposes and, where required, under an identified lawful basis or statutory authority.
+
+Consent shall be used only when Corporate Privacy or Legal determines that it is appropriate. Consent shall not be treated as the default authority for routine reservation, employment, safety, contractual, or legally required processing.
+
+Personnel shall not access personal information out of curiosity, for personal benefit, to search for acquaintances or public figures, or for any purpose unrelated to assigned duties.
+
+Production personal information shall not be used for demonstrations, training, testing, or development unless specifically approved and appropriately protected. Synthetic or de-identified information should be used where feasible.
+
+### 5.3 Notices, Consent, and Preferences
+
+- Approved privacy notices shall be provided when required by applicable law or Company policy.
+- Only approved consent, authorization, opt-in, opt-out, and preference mechanisms may be used.
+- Marketing preferences, unsubscribe requests, opt-outs, and suppression lists shall be honored across applicable systems.
+- Records of consent, withdrawal, and preferences shall be maintained as required.
+- Personnel shall not independently promise deletion, access, reimbursement, a response deadline, or any other legal or privacy outcome. Requests and complaints shall be routed through the approved process.
+
+### 5.4 Confidentiality and Sensitive Personal Information
+
+Access to personal information shall be limited to authorized Personnel with a legitimate business need and managed in accordance with the Company's access-control and information-handling requirements.
+
+Before disclosing personal information, Personnel shall verify the recipient's identity, authority, and purpose and disclose only the minimum information necessary.
+
+Guest room numbers, guest presence, reservation details, stay history, contact information, billing information, and preferences shall not be disclosed without verified authority and an approved operational process.
+
+Sensitive personal information shall receive protection appropriate to its legal requirements, business necessity, and risk. Sensitive information shall not be entered into general notes, free-text fields, or unstructured records unless the field and use are approved for that purpose.
+
+Biometric identification, facial recognition, voiceprints, fingerprinting, emotion inference, children's profiling, and similar high-risk processing shall not be introduced without required Corporate Privacy, Legal, and Information Security review and approval.
+
+Information concerning children shall be collected, used, disclosed, and retained only when necessary for an approved business purpose and in accordance with applicable legal and Corporate requirements.
+
+Routine processing necessary to provide accommodations, reservations, amenities, safety, or other legitimate hotel services may include limited information concerning children. Personnel shall not, however, independently collect additional information directly from children or use children's information for profiling, behavioral advertising, marketing, automated decision-making, or other secondary purposes without required Corporate Privacy or Legal approval.
+
+### 5.5 Payment Account Data
+
+Payment account data shall be handled only through approved payment channels and in accordance with the Company's PCI DSS program and Payment Data Handling requirements. This Policy supplements and does not replace applicable PCI DSS policies, standards, and procedures.
+
+Specific requirements governing the collection, storage, display, transmission, access, retention, and disposal of payment account data shall be established through the Company's PCI DSS program.
+
+Payment account data shall not be placed in unapproved systems, communications, recordings, reports, or general notes. Any suspected loss, exposure, misdirection, unauthorized storage, or improper disclosure shall be reported immediately through the established incident reporting channel.
+
+### 5.6 Disclosure, Vendors, and Cross-Border Processing
+
+Personal information shall be disclosed only to an authorized recipient for an approved purpose and limited to the information necessary.
+
+Requests from law enforcement, regulators, courts, litigants, media, private investigators, insurers, attorneys, or other external parties shall be referred to the appropriate legal or privacy contact unless an approved procedure expressly authorizes the disclosure.
+
+Personal information shall not be entered into unapproved cloud services, generative artificial intelligence tools, consumer applications, file-sharing tools, or vendor systems.
+
+Vendors shall complete applicable privacy, security, procurement, and contractual review before receiving personal information or system access.
+
+The Property shall support required vendor inventories, due diligence, oversight, incident management, and termination activities.
+
+Approved vendors shall remain subject to ongoing oversight appropriate to the nature, volume, sensitivity, and risk of the processing they perform.
+
+Material changes involving a vendor's services, systems, subprocessors, processing locations, ownership, security practices, data uses, integrations, or access to Company information shall be reported and reviewed as required before implementation.
+
+Personnel shall not independently accept vendor privacy or data-processing terms, authorize new data uses, activate optional information-sharing or integration functionality, permit additional vendor access, or materially expand an existing vendor's processing of personal information without required approval.
+
+Upon termination or expiration of a vendor relationship, access shall be removed promptly and personal information shall be returned, deleted, or otherwise handled in accordance with applicable contractual, retention, legal-hold, and incident-preservation requirements. Evidence of deletion or return shall be obtained where required.
+
+Vendors involved in payment processing or able to affect the cardholder data environment shall also be managed under applicable PCI DSS third-party service provider requirements.
+
+Personal information shall not be transferred, hosted, remotely accessed, or otherwise made available outside approved jurisdictions or contractual arrangements without Corporate Privacy or Legal review.
+
+#### 5.6.1 Digital Tracking Technologies
+
+Websites, mobile applications, guest Wi-Fi portals, digital check-in services, booking interfaces, QR-code services, and other digital services shall use only approved tracking, analytics, advertising, session-recording, or similar technologies.
+
+Cookies, pixels, web beacons, software development kits (SDKs), session-replay technologies, advertising technologies, analytics services, device-identification technologies, and similar tools shall undergo applicable Privacy, Legal, Information Security, and vendor review before implementation or material modification.
+
+Required notices, consent mechanisms, opt-out mechanisms, preference controls, and other privacy choices shall be implemented in accordance with applicable law and Corporate requirements.
+
+Personnel shall not independently add tracking technologies, advertising integrations, analytics scripts, widgets, plug-ins, or similar technologies to Company or Property digital services.
+
+### 5.7 Retention, Legal Holds, and Disposal
+
+Personal information shall be retained only as required by the approved Retention Schedule and applicable legal, regulatory, contractual, and business requirements. Departments shall not independently establish or extend retention periods.
+
+Where payment account data is retained, the Property shall follow the Company's PCI DSS retention process, including verification at least once every three months that stored payment account data exceeding approved retention requirements has been securely deleted or rendered unrecoverable. Sensitive authentication data shall not be retained after authorization.
+
+Records subject to a legal hold, investigation, audit, privacy request, complaint, or incident-preservation requirement shall be preserved until formally released. Temporary copies shall be securely destroyed when no longer needed.
+
+Once Personnel become aware that information may be relevant to a privacy request, complaint, investigation, litigation, regulatory inquiry, audit, legal hold, or privacy or security incident, routine alteration, deletion, destruction, or disposal of potentially relevant information shall be suspended as directed.
+
+Personnel shall not independently determine that potentially relevant records may be deleted because they have exceeded their normal retention period.
+
+Disposal shall follow applicable Data Handling, Records Retention, and IT Asset Disposition requirements. Upon vendor termination, personal information shall be returned or deleted as required, with evidence retained where appropriate.
+
+### 5.8 Privacy by Design, Data Inventory, and Risk Assessment
+
+Required privacy and security reviews shall occur before introducing or materially changing a system, vendor, form, process, device, monitoring technology, payment flow, or other use of personal information.
+
+Review is particularly important when processing involves: sensitive personal information; children's information; systematic monitoring or surveillance; biometrics or precise location; artificial intelligence, profiling, or automated decisions; new disclosures, integrations, vendors, or purposes; cross-border access or transfers; or processing likely to create significant risk to individuals.
+
+The Property shall maintain or support an accurate inventory of systems and processing activities involving personal information. At a minimum, the inventory shall identify: the processing activity or business process; the responsible department and business owner; categories of individuals whose information is processed; categories of personal and sensitive personal information involved; systems, applications, repositories, and physical locations where information is maintained; sources from which the information is obtained; business purposes for processing; internal and external recipients; vendors and other third parties involved; cross-border storage, hosting, access, or transfers; applicable retention requirements; significant integrations or interfaces with other systems; and applicable high-risk processing, security restrictions, or privacy-assessment requirements.
+
+#### 5.8.1 Artificial Intelligence and Automated Processing
+
+Artificial intelligence, machine learning, generative AI, automated decision-making, profiling, or similar technologies shall not be used to process personal information unless the use has been reviewed and approved through applicable Corporate Privacy, Legal, Information Security, procurement, and other required governance processes.
+
+Personnel shall not enter, upload, transmit, or otherwise disclose personal information, payment account data, authentication information, or other Company information to publicly available or unapproved artificial intelligence services.
+
+Approved AI systems shall be configured and used in accordance with applicable requirements for data minimization, access control, retention, security, transparency, vendor management, and human oversight.
+
+AI-generated information concerning an individual shall not be assumed to be accurate. Appropriate human review shall be performed before AI-generated information is used to make, recommend, or support a decision that could materially affect an individual.
+
+### 5.9 Privacy Rights Requests and Complaints
+
+Personnel shall recognize and promptly escalate requests concerning access, knowledge, correction, deletion, portability, restriction, objection, opt-out, limitation, consent withdrawal, automated decisions, or appeal. A request does not need to reference a specific law or use formal privacy terminology.
+
+Personnel shall not: respond substantively unless authorized; use an unapproved identity-verification method; confirm whether responsive records exist; alter or delete potentially responsive records; discourage or retaliate against the requestor; or promise a particular response or outcome.
+
+Privacy requests shall be forwarded to the designated Privacy or Legal function as soon as practicable and no later than one business day after receipt. Relevant records shall be preserved, and the Property shall provide assistance as directed.
+
+Privacy complaints shall be documented and promptly escalated to the designated Privacy or Legal function. Matters involving information security, employment, discrimination, regulatory contact, or suspected unlawful conduct shall also be referred to the appropriate responsible function.
+
+### 5.10 Employee, Applicant, and Monitoring Privacy
+
+Employment-related personal information shall be processed only for approved recruiting, employment, payroll, benefits, safety, security, legal, or workforce-management purposes.
+
+Access to personnel files, medical and leave records, background checks, compensation, performance information, investigations, and protected-category information shall be restricted to authorized Personnel and systems.
+
+Monitoring of Company systems, devices, communications, locations, employees, or workplaces shall occur only through approved programs, for approved purposes, and with required notices or other legal safeguards.
+
+Cameras shall not be placed in bathrooms, changing areas, or other locations where individuals reasonably expect heightened privacy unless expressly permitted by law and approved by Legal.
+
+Audio recording, biometric analytics, facial recognition, behavioral analytics, or automated identification requires specific approval before implementation.
+
+### 5.11 Privacy Incident Management
+
+Personnel shall immediately report any actual or suspected privacy, personal-information, or payment-account-data incident through the Company's designated incident-reporting process.
+
+Personnel shall: take only safe, authorized steps to limit further exposure; preserve relevant records and evidence; follow instructions from the authorized incident-response team; and refrain from independently contacting affected individuals, regulators, payment brands, financial institutions, media, law enforcement, or vendors unless authorized under an approved procedure.
+
+The designated Privacy, Legal, Information Security, and incident-response functions shall assess, contain, investigate, and document the incident; determine applicable legal, regulatory, contractual, and PCI DSS obligations; and authorize required external notifications.
+
+### 5.12 Training, Documentation, Audit, and Corrective Action
+
+Personnel shall complete required privacy and information security training upon hire and at least annually thereafter. Role-based training shall be provided for duties involving elevated privacy, security, monitoring, employment, marketing, payment, or system-access risks.
+
+The Property shall maintain records sufficient to demonstrate implementation of this Policy, including training, approvals, inventories, assessments, privacy requests, complaints, incidents, reviews, and corrective actions.
+
+Findings shall be documented, assigned to an accountable owner, remediated within an approved timeframe, and supported by evidence of completion. Material or overdue findings shall be escalated.
+
+## 6. Procedures
+
+### 6.1 Personal Information Handling
+
+Personnel shall:
+
+1. Confirm that the activity is part of an assigned duty and use only approved systems, forms, and communication channels.
+2. Collect, access, use, and disclose only the information necessary for the task.
+3. Verify identity and authority before discussing, changing, printing, sending, or releasing personal information.
+4. Protect personal information from unauthorized access, viewing, overhearing, photography, copying, or disclosure.
+5. Avoid unnecessary notes, screenshots, exports, downloads, or duplicate records.
+6. Store required records in the approved location and securely delete or destroy temporary copies.
+7. Secure printed and physical records containing personal information when unattended and prevent unauthorized viewing, photography, copying, or removal.
+8. Do not leave guest lists, registration records, rooming lists, housekeeping reports, folios, event records, employee records, incident reports, or similar documents in public, guest-accessible, or otherwise unsecured areas.
+9. Print, copy, export, or distribute only the minimum personal information necessary for the operational purpose.
+10. Retrieve printed records promptly from shared printers and dispose of records containing personal information through approved secure-disposal methods.
+11. Immediately report suspected scams, misdirection, unauthorized access, disclosure, loss, or other concerns.
+
+### 6.2 Guest Identity Verification and Information Release
+
+Personnel shall use the approved verification procedure for the applicable channel and transaction. Verification shall not rely solely on information that may be easily obtained, such as a room number, reservation number, caller identification, email display name, or itinerary details.
+
+Personnel shall not disclose information during verification that could assist an unauthorized person in answering verification questions.
+
+Required enhanced verification and approval shall be completed before changing a reservation, contact method, payment method, authorized guest, loyalty account, refund destination, or key access.
+
+Requests concerning whether an individual is staying at the Property shall be handled through the approved guest-contact and confidential-guest procedure. Guest presence shall not be confirmed or denied unless authorized.
+
+Personnel shall treat requests involving unusual urgency, secrecy, impersonation, unexpected changes to contact or payment information, requests to redirect refunds, requests to disclose guest location or stay information, law-enforcement claims, or attempts to bypass established verification requirements as potential fraud or social-engineering events.
+
+### 6.3 Department Procedures
+
+Department Managers shall maintain and implement procedures appropriate to the personal information processed by their departments. Procedures shall be consistent with this Policy and applicable Corporate requirements.
+
+Department procedures shall address, as applicable: authorized systems and records; collection and use of personal information; access restrictions; identity verification; information disclosure; printing and physical records; retention and disposal; vendor use; privacy requests; incident reporting; and department-specific privacy risks.
+
+Department procedures shall be reviewed at least annually and when there are material changes to systems, vendors, business processes, information collected, regulatory requirements, or identified risks.
+
+### 6.4 Privacy Request Escalation
+
+Personnel shall:
+
+1. **Recognize:** Treat requests concerning personal information or privacy choices as potential privacy requests, regardless of the terminology used.
+2. **Record:** Document the date received, requestor's contact information, communication channel, and substance of the request without collecting unnecessary identity documentation.
+3. **Escalate:** Forward the request to the designated Privacy or Legal function as soon as practicable and no later than one business day after receipt.
+4. **Preserve:** Protect potentially responsive records from alteration or deletion as directed.
+5. **Support:** Gather and transmit information only as instructed and through approved secure channels.
+6. **Respond:** Refrain from issuing a substantive response unless authorized. Final responses shall be provided by the designated Privacy or Legal function or an approved delegate.
+
+### 6.5 Privacy Incident Escalation
+
+Personnel shall:
+
+1. **Contain safely:** Stop the activity or secure exposed information when safe and authorized. Do not alter or destroy evidence.
+2. **Report immediately:** Report the incident through the Company's designated incident-reporting process.
+3. **Preserve evidence:** Retain relevant communications, records, devices, logs, and other evidence as instructed.
+4. **Follow direction:** Cooperate with the authorized Privacy, Legal, Information Security, and incident-response functions.
+5. **Do not notify independently:** Refrain from contacting affected individuals, regulators, payment brands, financial institutions, media, law enforcement, or vendors unless authorized.
+6. **Remediate:** Complete assigned corrective actions, access changes, vendor follow-up, retraining, and documentation.
+
+For purposes of this requirement, "immediately" means as soon as reasonably possible after discovery. Suspected incidents shall be reported even when the facts, scope, individuals affected, or regulatory significance are not yet known.
+
+### 6.6 Annual Property Privacy Review
+
+The General Manager and the designated Property Privacy Coordinator or other assigned manager shall complete and document the review of Property privacy practices at least annually and following significant incidents, regulatory inquiries, acquisitions, major system changes, or other material changes to processing activities, technology, operations, or risk.
+
+The review shall address, as applicable: material changes to processing activities, systems, vendors, integrations, monitoring, or transfers; data inventory and retention practices; notices, requests, complaints, incidents, and corrective actions; training and access-review completion; high-risk processing and required assessments; outstanding audit findings and remediation; and current contacts, escalation channels, and department procedures.
+
+### 6.7 Exceptions
+
+Exceptions shall be documented, time-limited, risk-assessed, and approved in writing by the appropriate authorized functions. Each exception shall identify its scope, justification, risks, compensating safeguards, owner, and expiration.
+
+Exceptions shall not waive applicable legal, regulatory, contractual, PCI DSS, payment-brand, acquirer, court-order, or legal-hold requirements.
+
+### 6.8 Compliance and Enforcement
+
+Violations of this Policy may result in corrective or disciplinary action, up to and including termination of employment or contract, consistent with applicable law and Company policy.
+
+Good-faith reporting of privacy concerns, incidents, requests, complaints, or suspected violations shall be protected from retaliation.
+
+## 7. Appendix
+
+### Appendix A — Policy Acknowledgment
+
+I acknowledge that I have received, read, and understand the Company's Property-Level Privacy Management Policy. I agree to comply with its requirements and all related Company policies, standards, and procedures.
+
+Signature: [__________________________________________]
+
+Name: [__________________________________________]
+
+Date: [__________________________________________]
+
+Department: [__________________________________________]
+
+### Appendix B — Shared Responsibility Matrix
+
+This matrix defines the allocation of privacy responsibilities between Corporate and Property personnel.
+
+- **R = Responsible:** Performs or supports the activity
+- **A = Accountable:** Owns the activity and its outcome
+- **C = Consulted:** Provides review, expertise, or approval input
+- **I = Informed:** Receives relevant information or status updates
+
+| Activity | Corporate | General Manager | Property Coordinator | Security / IT | Dept Managers |
+|---|---|---|---|---|---|
+| Privacy policies & standards | **A/R** | **I** | **C** | **C** | **I** |
+| Property implementation & compliance | **C** | **A** | **R** | **C** | **R** |
+| Privacy notices, lawful basis, & consent | **A/R** | **I** | **C** | **C** | **C** |
+| Data inventory & records of processing | **A** | **C** | **R** | **R** | **R** |
+| Privacy risk assessments & DPIAs | **A/R** | **C** | **R** | **C/R** | **C** |
+| Privacy rights requests & complaints | **A/R** | **I** | **R** | **C** | **R** |
+| Privacy incident investigation & notification | **A** | **C** | **R** | **R** | **R** |
+| Information security & PCI DSS controls | **C** | **I** | **C** | **A/R** | **R** |
+| Vendor privacy, security, & contractual review | **A/R** | **I** | **C** | **C/R** | **R** |
+| Privacy training standards | **A/R** | **I** | **C** | **C** | **I** |
+| Property training completion & awareness | **C** | **A** | **R** | **C** | **R** |
+| Retention requirements & legal holds | **A/R** | **I** | **R** | **C** | **R** |
+| Secure disposal implementation | **C** | **A** | **C** | **R** | **R** |
+| Annual Property privacy review | **C** | **A** | **R** | **C** | **C** |
+| Audit support and corrective action | **C** | **A** | **R** | **R** | **R** |
+| Policy review and version control | **A/R** | **I** | **C** | **C** | **I** |
+
+### Appendix C — Revision History
+
+| Date | Version | Description | Approved By |
+|------|---------|-------------|-------------|
+|      | 1.0     | Initial release | |`;
 }
 
 function getPRVContent() {
@@ -6275,6 +6701,7 @@ const CATEGORIES = {
       { id: 'drp',  name: 'Data Retention & Disposal Policy',icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/></svg>' },
       { id: 'gdpr', name: 'Information Security Policy — GDPR', icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 01-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 011-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 011.52 0C14.51 3.81 17 5 19 5a1 1 0 011 1z"/></svg>' },
       { id: 'prv',  name: 'Privacy Policy',                  icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>' },
+      { id: 'plpp', name: 'Property-Level Privacy Policy',        icon: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>' },
     ]
   },
   'grp-access': {
